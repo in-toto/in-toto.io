@@ -1,8 +1,15 @@
 {{ $logo := printf "img/logos/%s" site.Params.logos.hero | relURL }}
-<section class="hero">
+{{ $desc := site.Params.description | markdownify }}
+<section class="hero is-medium">
   <div class="hero-body has-text-centered">
     <div class="container">
-      <img class="hero-logo" src="{{ $logo }}" alt="in-toto hero logo">
+      <p class="title is-spaced">
+        <img class="hero-logo" src="{{ $logo }}" alt="in-toto hero logo">
+      </p>
+
+      <p class="subtitle is-size-3 is-size-5-mobile has-text-weight-light">
+        {{ $desc }}
+      </p>
     </div>
   </div>
 </section>

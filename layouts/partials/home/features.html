@@ -1,0 +1,25 @@
+{{ $features := site.Params.features }}
+<section class="section">
+  <div class="container">
+    {{ range $features }}
+    {{ $img := printf "img/features/%s" .img | relURL }}
+    <div class="columns is-vcentered is-variable is-8">
+      <div class="column">
+        <p class="title is-size-3 is-size-4-mobile has-text-weight-light">
+          {{ .title }}
+        </p>
+
+        <hr class="thick-hr" />
+
+        <p>
+          {{ .description }}
+        </p>
+      </div>
+
+      <div class="column has-text-centered">
+        <img class="feature-image" src="{{ $img }}">
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>

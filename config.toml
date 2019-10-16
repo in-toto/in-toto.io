@@ -19,3 +19,31 @@ hero = "in-toto-horizontal-color.png"
 name = "Lato"
 sizes = [300,400,600,700]
 type = "sans_serif"
+
+[[params.features]]
+title = "Software supply chain protection"
+description = "Supply chain compromises are becoming a frequent occurrence. In-toto can help you protect your software supply chain."
+button_url = "/"
+button_text = "Read more"
+img = "layout.png"
+
+[[params.features]]
+title = "Open, extensible standard"
+description = "in-toto is an open metadata standard that you can implement in your software's supply chain toolchain."
+button_url = "/"
+button_text = "Read the specifications"
+img = "metadata.png"
+
+[[params.features]]
+title = "Extensive tooling"
+description = "You can use in-toto today by using your MIT-licensed library and tools."
+button_url = "/"
+button_text = "Tools"
+img = "gears.png"
+
+[[params.features]]
+title = "Try it out!"
+description = "Get started today designing an in-toto layout using our web layout tool."
+button_url = "/"
+button_text = "Get started"
+img = "tool.png"

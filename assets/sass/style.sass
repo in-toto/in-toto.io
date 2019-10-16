@@ -22,15 +22,24 @@ $in-toto-blue: #3688d6
 
 // Bulma variable overrides
 $primary: $in-toto-blue
+$secondary: $in-toto-orange
 
 @import "bulma/sass/utilities/derived-variables"
 @import "bulma/bulma"
 
-=logo($mobile, $desktop)
+=responsive-img($mobile, $desktop)
   +mobile
     width: $mobile
   +desktop
     width: $desktop
 
 .hero-logo
-  +logo(100%, 80%)
+  +responsive-img(100%, 70%)
+
+.feature-image
+  +responsive-img(80%, 50%)
+
+hr.thick-hr
+  width: 5rem
+  background-color: $secondary
+  height: .15rem
