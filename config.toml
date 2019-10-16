@@ -13,6 +13,7 @@ fontAwesomeVersion = "5.3.1"
 [params.logos]
 navbar = "in-toto-horizontal-color.png"
 hero = "in-toto-horizontal-color.png"
+footer = "in-toto-stacked-white.png"
 
 [[params.fonts]]
 name = "Lato"

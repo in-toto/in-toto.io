@@ -2,7 +2,8 @@
 <section class="section">
   <div class="container">
     {{ range $features }}
-    {{ $img := printf "img/features/%s" .img | relURL }}
+    {{ $img  := printf "img/features/%s" .img | relURL }}
+    {{ $link := .button_url | relURL }}
     <div class="columns is-vcentered is-variable is-8">
       <div class="column">
         <p class="title is-size-3 is-size-4-mobile has-text-weight-light">
@@ -11,9 +12,13 @@
 
         <hr class="thick-hr" />
 
-        <p>
+        <p class="subtitle is-size-5 is-size-6-mobile has-text-weight-medium">
           {{ .description }}
         </p>
+
+        <a class="button is-outlined is-radiusless is-primary has-text-weight-bold" href="{{ $link }}">
+          {{ .button_text }}
+        </a>
       </div>
 
       <div class="column has-text-centered">

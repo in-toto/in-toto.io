@@ -36,10 +36,22 @@ $secondary: $in-toto-orange
 .hero-logo
   +responsive-img(100%, 70%)
 
+.footer-logo
+  +responsive-img(50%, 30%)
+
 .feature-image
   +responsive-img(80%, 50%)
 
 hr.thick-hr
   width: 5rem
   background-color: $secondary
-  height: .15rem
+  height: .2rem
+
+// Make footer stick to the bottom
+.page
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
+  .main
+    flex: 1
