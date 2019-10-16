@@ -1,0 +1,17 @@
+baseURL = "https://in-toto.io"
+languageCode = "en-us"
+title = "in-toto"
+pygmentsUseClasses = true
+pygmentsCodefences = true
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+description        = "A framework to secure the integrity of software supply chains"
+googleAnalyticsId  = "UA-71407002-1"
+fontAwesomeVersion = "5.3.1"
+
+[[params.fonts]]
+name = "Lato"
+sizes = [300,400,600,700]
+type = "sans_serif"
