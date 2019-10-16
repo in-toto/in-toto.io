@@ -4,8 +4,8 @@
     {{ range $features }}
     {{ $img  := printf "img/features/%s" .img | relURL }}
     {{ $link := .button_url | relURL }}
-    <div class="columns is-vcentered is-variable is-8 feature-column">
-      <div class="column">
+    <div class="columns is-vcentered is-variable is-8 feature-columns">
+      <div class="column is-two-thirds">
         <p class="title is-size-3 is-size-4-mobile has-text-dark has-text-weight-medium">
           {{ .title }}
         </p>
@@ -21,7 +21,7 @@
         </a>
       </div>
 
-      <div class="column has-text-centered">
+      <div class="column has-text-right">
         <img class="feature-image" src="{{ $img }}">
       </div>
     </div>
