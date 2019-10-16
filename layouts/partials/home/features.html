@@ -4,7 +4,7 @@
     {{ range $features }}
     {{ $img  := printf "img/features/%s" .img | relURL }}
     {{ $link := .button_url | relURL }}
-    <div class="columns is-vcentered is-variable is-8">
+    <div class="columns is-vcentered is-variable is-8 feature-column">
       <div class="column">
         <p class="title is-size-3 is-size-4-mobile has-text-weight-light">
           {{ .title }}
