@@ -18,7 +18,7 @@ hero = "in-toto-horizontal-color.png"
 footer = "in-toto-stacked-white.png"
 
 [[params.fonts]]
-name = "Lato"
+name = "Open Sans"
 sizes = [300,400,600,700]
 type = "sans_serif"
 
