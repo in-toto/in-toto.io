@@ -25,3 +25,12 @@ $primary: $in-toto-blue
 
 @import "bulma/sass/utilities/derived-variables"
 @import "bulma/bulma"
+
+=logo($mobile, $desktop)
+  +mobile
+    width: $mobile
+  +desktop
+    width: $desktop
+
+.hero-logo
+  +logo(100%, 80%)

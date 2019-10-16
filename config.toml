@@ -11,6 +11,10 @@ description        = "A framework to secure the integrity of software supply cha
 googleAnalyticsId  = "UA-71407002-1"
 fontAwesomeVersion = "5.3.1"
 
+[params.logos]
+navbar = "in-toto-horizontal-white.png"
+hero = "in-toto-horizontal-color.png"
+
 [[params.fonts]]
 name = "Lato"
 sizes = [300,400,600,700]
