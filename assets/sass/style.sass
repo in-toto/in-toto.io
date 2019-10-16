@@ -25,6 +25,9 @@ $primary: $in-toto-blue
 $secondary: $in-toto-orange
 
 @import "bulma/sass/utilities/derived-variables"
+
+$colors: mergeColorMaps(("secondary": ($secondary, $white)), $colors)
+
 @import "bulma/bulma"
 
 =responsive-img($mobile, $desktop)
@@ -37,7 +40,7 @@ $secondary: $in-toto-orange
   +responsive-img(100%, 70%)
 
 .footer-logo
-  +responsive-img(50%, 30%)
+  +responsive-img(25%, 30%)
 
 .feature-image
   +responsive-img(80%, 50%)
