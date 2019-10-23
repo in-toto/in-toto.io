@@ -1,5 +1,5 @@
 {{ $features := site.Params.features }}
-<section class="section">
+<section class="section features-section">
   <div class="container">
     {{ range $features }}
     {{ $img  := printf "img/features/%s" .img | relURL }}
@@ -28,3 +28,4 @@
     {{ end }}
   </div>
 </section>
+
