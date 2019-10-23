@@ -1,3 +1,7 @@
+{{ define "title" }}
+{{ site.Title }} | {{ .Title }}
+{{ end }}
+
 {{ define "main" }}
 {{ partial "hero.html" . }}
 {{ partial "content.html" . }}

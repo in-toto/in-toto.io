@@ -1,3 +1,7 @@
+{{ define "title" }}
+{{ site.Title }} | {{ site.Params.description }}
+{{ end }}
+
 {{ define "main" }}
 {{ partial "home/hero.html" . }}
 {{ partial "home/features.html" . }}
