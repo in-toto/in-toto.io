@@ -1,0 +1,17 @@
+{{ $news := site.Data.news }}
+<div class="container">
+  {{ range $news }}
+  {{ $date := dateFormat "January 2, 2006" .date }}
+  <div class="columns content is-medium">
+    <div class="column is-2">
+      <strong>
+        {{ $date }}
+      </strong>
+    </div>
+
+    <div class="column">
+      {{ .text | markdownify }}
+    </div>
+  </div>
+  {{ end }}
+</div>
