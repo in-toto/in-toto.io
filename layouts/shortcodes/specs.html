@@ -1,0 +1,27 @@
+{{ $specs := site.Data.specs }}
+<table>
+  <thead>
+    <tr>
+      <th>
+        Version
+      </th>
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $specs }}
+    <tr>
+      <td>
+        <a href="{{ .url }}" target="_blank">
+          {{ .version }}
+        </a>
+      </td>
+      <td>
+        {{ .description | markdownify }}
+      </td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
