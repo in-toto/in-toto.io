@@ -35,17 +35,17 @@ $colors: mergeColorMaps(("secondary": ($secondary, $white)), $colors)
 
 @import "bulma/bulma"
 
-=responsive-img($mobile, $desktop)
+=responsive-img($mobile, $tablet)
   +mobile
     width: $mobile
-  +desktop
-    width: $desktop
+  +tablet
+    width: $tablet
 
 .hero-logo
   +responsive-img(100%, 70%)
 
 .footer-logo
-  +responsive-img(25%, 30%)
+  +responsive-img(20%, 30%)
 
 .feature-image
   max-height: 10rem
