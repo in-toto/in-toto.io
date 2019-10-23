@@ -1,5 +1,5 @@
 {{ $features := site.Params.features }}
-<section class="section features-section">
+<section class="section bottom-padding">
   <div class="container">
     {{ range $features }}
     {{ $img  := printf "img/features/%s" .img | relURL }}

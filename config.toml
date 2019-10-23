@@ -49,3 +49,83 @@ description = "Get started today designing an in-toto layout using our web layou
 button_url = "/"
 button_text = "Get started"
 img = "tool.png"
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+weight = 1
+
+[[menu.main]]
+parent = "about"
+name = "What is in-toto?"
+url = "/in-toto"
+weight = 1
+
+[[menu.main]]
+parent = "about"
+name = "Ongoing integrations"
+url = "/integrations"
+weight = 2
+
+[[menu.main]]
+identifier = "community"
+name = "Community"
+weight = 2
+
+[[menu.main]]
+parent = "community"
+name = "Contact"
+url = "/contact"
+weight = 1
+
+[[menu.main]]
+parent = "community"
+name = "Contribute"
+url = "https://github.com/in-toto/in-toto/"
+weight = 2
+
+[[menu.main]]
+identifier = "get-started"
+name = "Get started"
+weight = 3
+
+[[menu.main]]
+parent = "get-started"
+name = "Try it out"
+url = "https://github.com/in-toto/demo"
+weight = 1
+
+[[menu.main]]
+parent = "get-started"
+name = "Metadata examples"
+url = "/metadata-examples"
+weight = 2
+
+[[menu.main]]
+parent = "get-started"
+name = "Specifications"
+url = "/specs"
+weight = 3
+
+[[menu.main]]
+parent = "get-started"
+name = "Layout tool"
+url = "https://in-toto.engineering.nyu.edu"
+weight = 4
+
+[[menu.main]]
+identifier = "learn"
+name = "Learn more"
+weight = 4
+
+[[menu.main]]
+parent = "learn"
+name = "News"
+url = "/news"
+weight = 1
+
+[[menu.main]]
+parent = "learn"
+name = "Frequently asked questions"
+url = "/faq"
+weight = 2

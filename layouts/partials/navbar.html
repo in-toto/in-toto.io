@@ -1,6 +1,7 @@
 {{ $home := site.BaseURL }}
 {{ $logo := printf "img/logos/%s" site.Params.logos.navbar | relURL }}
 {{ $repo := printf "https://github.com/%s" site.Params.github_repo }}
+{{ $menu := site.Menus.main }}
 <nav class="navbar is-fixed-top has-shadow">
   <div class="container">
     <div class="navbar-brand">
@@ -17,6 +18,32 @@
 
     <div class="navbar-menu" id="navbar-menu">
       <div class="navbar-end">
+        {{ range $menu }}
+        {{ if .HasChildren }}
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            {{ .Name }}
+          </a>
+
+          <div class="navbar-dropdown">
+            {{ range .Children }}
+            {{ $isExternal := hasPrefix .URL "http" }}
+            <a class="navbar-item" href="{{ .URL }}"{{ if $isExternal }} target="_blank"{{ end }}>
+              <span>
+                {{ .Name }}
+              </span>
+              {{ if $isExternal }}
+              <span class="icon pad-left has-text-secondary">
+                <i class="fas fa-sm fa-external-link-alt"></i>
+              </span>
+              {{ end }}
+            </a>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+        {{ end }}
+
         <div class="navbar-item">
           <a class="button is-black is-radiusless has-text-weight-bold" href="{{ $repo }}" target="_blank">
             <span class="icon">
