@@ -1,0 +1,27 @@
+- img: repeatr.png
+  text: |
+    We are actively working with [repeatr](https://repeatr.io/) to create a cross-compatible metadata format that can be both used for supply-chain step memoization and supply-chain security.
+- img: reproducible-builds.svg
+  text: |
+    We are participating with the reproducible builds community to improve the security properties of build systems. We are also integrating in-toto into reprotest, so that people can create in-toto metadta to attest for the reproducibility of a step. You can set up your own rebuilder to reproduce debian packages and produce in-toto metadata by following the instructions [here](https://salsa.debian.org/reproducible-builds/debian-rebuilder-setup).
+- img: git.png
+  text: |
+    We are working with the git community to improve the security model of git metadata signing. We have already integrated [three series](https://public-inbox.org/git/20170117233723.23897-1-santiago@nyu.edu/) of patches to ensure GPG-signed git tags can't be spoofed.
+- img: debian.png
+  text: |
+    We are actively working with the Debian community so that in-toto metadata is generated within Debian's software supply chain. In addition, we intend to have in-toto metadata be verified when using Debian's dpkg/apt toolchain. You can take a look and play around with our debian apt-transport [here](https://github.com/in-toto/apt-transport-in-toto).
+- img: archlinux.png
+  text: |
+    The Arch Linux community already included our patches [git tag verification](https://lists.archlinux.org/pipermail/pacman-dev/2017-September/022123.html). We aim to have an integration similar to Debian's in the future.
+- img: docker.png
+  text: |
+    Docker is currently trying out in-toto metadata internally to protect the security properties of their pipelines.
+- img: opensuse.png
+  text: |
+    We have a demo deployment of opensuse's OBS using in-toto. We are working with the opensuse community to generate in-toto link metadata within their OBS services. You can take a look at how this would work today by taking a look at [this repo](https://github.com/in-toto/demo-opensuse).
+- img: control-plane.png
+  text: |
+    We are working actively with Control Plane to secure the software supply chain in cloud native integrations.
+- img: datadog.png
+  text: |
+    Datadog has deployed TUF and in-toto into their pipeline! Read More [here](https://www.datadoghq.com/blog/engineering/secure-publication-of-datadog-agent-integrations-with-tuf-and-in-toto/).
