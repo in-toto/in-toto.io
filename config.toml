@@ -1,4 +1,4 @@
-baseURL = "https://in-toto.io"
+baseURL = "https://in-toto.netlify.com"
 languageCode = "en-us"
 title = "in-toto"
 pygmentsUseClasses = true
