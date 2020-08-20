@@ -1,3 +1,15 @@
+- date: 2019-10-14
+  text: |
+    Tobias Furuholm presented in-toto at the [CASTOR Software Days](https://castor-software-days-2019.github.io) and shared a [video recording](https://drive.google.com/file/d/1kvkZtYNtnVjh4xxp8aR1fURSKMeOHnkf) and his [slides](/slides/CASTOR_SW_Days_2019_-_Securing_Software_Supply_Chains_with_in-toto_-_Tobias_Furuholm.pdf) with us.
+- date: 2019-10-02
+  text: |
+    Adrian Colyer wrote an article about [in-toto in "the morning paper"](https://blog.acolyer.org/2019/10/02/in-toto/).
+- date: 2019-07-09
+  text: |
+    in-toto was featured in the blog post ["33(+) Kubernetes Security Tools"](https://sysdig.com/blog/33-kubernetes-security-tools/).
+- date: 2019-06-08
+  text: |
+    We demonstrated how reproducible builds can be verified on "apt install" using in-toto at [MiniDebConf Hamburg](https://wiki.debian.org/DebianEvents/de/2019/MiniDebConfHamburg). You can [watch it online](https://gemmei.ftp.acc.umu.se/Public/debian-meetings/2019/miniconf-hamburg/in-toto.webm).
 - date: 2019-06-03
   text: |
     Datadog has deployed TUF and in-toto into their pipeline! Read more [here](https://www.datadoghq.com/blog/engineering/secure-publication-of-datadog-agent-integrations-with-tuf-and-in-toto).
