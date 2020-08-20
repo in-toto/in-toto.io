@@ -1,4 +1,4 @@
-baseURL = "https://in-toto.netlify.com"
+baseURL = "https://in-toto.io"
 languageCode = "en-us"
 title = "in-toto"
 pygmentsUseClasses = true
@@ -24,29 +24,29 @@ type = "sans_serif"
 
 [[params.features]]
 title = "Software supply chain protection"
-description = "Supply chain compromises are becoming a frequent occurrence. In-toto can help you protect your software supply chain."
-button_url = "/"
+description = "Supply chain compromises are becoming a frequent occurrence. in-toto can help you protect your software supply chain."
+button_url = "/in-toto"
 button_text = "Read more"
 img = "layout.png"
 
 [[params.features]]
 title = "Open, extensible standard"
 description = "in-toto is an open metadata standard that you can implement in your software's supply chain toolchain."
-button_url = "/"
+button_url = "/specs"
 button_text = "Read the specifications"
 img = "metadata.png"
 
 [[params.features]]
 title = "Extensive tooling"
-description = "You can use in-toto today by using your MIT-licensed library and tools."
-button_url = "/"
+description = "You can use in-toto today by using our Apache-licensed libraries and tools."
+button_url = "https://github.com/in-toto"
 button_text = "Tools"
 img = "gears.png"
 
 [[params.features]]
 title = "Try it out!"
 description = "Get started today designing an in-toto layout using our web layout tool."
-button_url = "/"
+button_url = "https://in-toto.engineering.nyu.edu"
 button_text = "Get started"
 img = "tool.png"
 
