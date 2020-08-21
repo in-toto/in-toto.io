@@ -1,7 +1,9 @@
 {{ $logo := printf "img/logos/%s" site.Params.logos.footer | relURL }}
 {{ $desc := site.Params.description }}
-{{ $year := now.Year }}
 {{ $repo := printf "https://github.com/%s" site.Params.github_repo }}
+{{ $firstYear   := "2020" | int }}
+{{ $currentYear := now.Year | int }}
+{{ $yearString  := cond (eq $firstYear $currentYear) $firstYear (printf "%d-%d" $firstYear $currentYear) }}
 <footer class="footer has-background-black has-text-light">
   <div class="container">
     <div class="columns is-vcentered">
@@ -26,10 +28,16 @@
         </a>
 
         <hr class="thick-hr" />
+        <p class="has-text-weight-light">
+          &copy; {{ $yearString }} in-toto Authors | Documentation Distributed under CC-BY-4.0
+        </p>
+
+        <br />
 
         <p class="has-text-weight-light">
-          &copy; {{ $year }} in-toto authors
+          &copy; {{ $currentYear }} The Linux Foundation. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our <a href="https://www.linuxfoundation.org/trademark-usage/" target="_blank">Trademark Usage</a> page.
         </p>
+
       </div>
     </div>
   </div>
