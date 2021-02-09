@@ -1,3 +1,12 @@
+- date: 2021-02-02
+  text: |
+    Peter Elkind and Jack Gillum published an article SolarWinds about [in-toto in ProPublica](https://www.propublica.org/article/solarwinds-cybersecurity-system)
+- date: 2020-12-15
+  text: |
+    Tech Xplore released an [article](https://techxplore.com/news/2020-12-free-tool-layer-software-chain.html) warning about software supply chain attacks and describing in-toto.
+- date: 2020-12-12
+  text: |
+    The Linux Foundation received support to help advance several projects, including [in-toto](https://www.linuxfoundation.org/press-release/2019/12/the-linux-foundations-automated-compliance-work-garners-new-funding-advances-tools-development/)!
 - date: 2019-10-14
   text: |
     Tobias Furuholm presented in-toto at the [CASTOR Software Days](https://castor-software-days-2019.github.io) and shared a [video recording](https://drive.google.com/file/d/1kvkZtYNtnVjh4xxp8aR1fURSKMeOHnkf) and his [slides](/slides/CASTOR_SW_Days_2019_-_Securing_Software_Supply_Chains_with_in-toto_-_Tobias_Furuholm.pdf) with us.
