@@ -9,4 +9,4 @@
     Yes, Python 3 is supported with in-toto.
 - q: Is there a timeline for the support of Python 2.7?
   a: |
-    Since some of our adopters don’t plan on phasing out of Python2, we are also not planning to phase it out any time soon.
+    We have released the final version of in-toto, v1.0.1, that supports Python 2. Our next release, at the end of April 2021, will drop support for Python 2.
