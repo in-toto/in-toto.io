@@ -10,3 +10,10 @@ command = "make preview-build"
 
 [context.branch-deploy]
 command = "make preview-build"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Content-Security-Policy = "default-src 'self' code.jquery.com fonts.googleapis.com fonts.gstatic.com use.fontawesome.com"
