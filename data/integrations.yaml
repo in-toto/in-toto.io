@@ -1,6 +1,6 @@
 - img: repeatr.png
   text: |
-    We are actively working with [repeatr](https://repeatr.io/) to create a cross-compatible metadata format that can be both used for supply-chain step memoization and supply-chain security.
+    We are actively working with [repeatr](https://repeatr.io/) to create a cross-compatible metadata format that can be both used for supply-chain step memorization and supply-chain security.
 - img: reproducible-builds.svg
   text: |
     We are participating with the reproducible builds community to improve the security properties of build systems. We are also integrating in-toto into reprotest, so that people can create in-toto metadata to attest for the reproducibility of a step. You can set up your own rebuilder to reproduce debian packages and produce in-toto metadata by following the instructions [here](https://salsa.debian.org/reproducible-builds/debian-rebuilder-setup).
