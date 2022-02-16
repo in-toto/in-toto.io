@@ -1,0 +1,15 @@
+# No versions mentioned in the spec so assume v0.1
+Envelope/v0.1     https://github.com/in-toto/attestation/tree/v0.1.0/spec#envelope 
+Predicate/v0.1    https://github.com/in-toto/attestation/tree/v0.1.0/spec#predicate 
+
+# Below version numbers are in the spec at the v0.1.0 tag.
+Statement/v0.1    https://github.com/in-toto/attestation/tree/v0.1.0/spec#statement
+Link/v1.0.0       https://github.com/in-toto/attestation/tree/v0.1.0/spec/predicates/link.md
+Provenance/v0.1.0 https://github.com/in-toto/attestation/tree/v0.1.0/spec/predicates/provenance.md
+SPDX/v1.0.0       https://github.com/in-toto/attestation/blob/v0.1.0/spec/predicates/spdx.md
+
+# Bonus: v0.1.0 <-> v0.1
+Envelope/v0.1.0   https://github.com/in-toto/attestation/tree/v0.1.0/spec#envelope 
+Predicate/v0.1.0  https://github.com/in-toto/attestation/tree/v0.1.0/spec#predicate 
+Provenance/v0.1   https://github.com/in-toto/attestation/tree/v0.1.0/spec/predicates/provenance.md
+Statement/v0.1.0  https://github.com/in-toto/attestation/tree/v0.1.0/spec#statement
