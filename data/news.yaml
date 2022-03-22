@@ -1,3 +1,6 @@
+- date: 2022-03-10
+  text: |
+    in-toto has moved from the Cloud Native Computing Foundation (CNCF) Sandbox to the Incubator! Read the full announcement [here](https://www.cncf.io/blog/2022/03/10/supply-chain-security-project-in-toto-moves-to-the-cncf-incubator/).
 - date: 2021-09-11
   text: |
     Our Google Summer of Code 2021 intern Qijia "Joy" Liu shares her [story about the in-toto Rust implementation](https://coda.io/@joy/2021-gsoc-story)
