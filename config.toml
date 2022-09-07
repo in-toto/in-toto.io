@@ -63,8 +63,8 @@ weight = 1
 
 [[menu.main]]
 parent = "about"
-name = "Ongoing integrations"
-url = "/integrations"
+name = "Adoptions and Integrations"
+url = "https://github.com/in-toto/friends"
 weight = 2
 
 [[menu.main]]
