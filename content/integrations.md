@@ -1,5 +1,0 @@
----
-title: Ongoing integrations
----
-
-{{< integrations >}}
