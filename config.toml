@@ -10,7 +10,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 description = "A framework to secure the integrity of software supply chains"
 fontAwesomeVersion = "5.3.1"
 vimeo_id = "237799749"
-github_repo = "in-toto/in-toto"
+github_repo = "in-toto/community"
 
 [params.logos]
 navbar = "in-toto-horizontal-color.png"
