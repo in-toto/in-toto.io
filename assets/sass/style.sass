@@ -1,7 +1,7 @@
 {{- $fonts    := site.Params.fonts }}
 {{- $fontSlice := (slice) }}
 {{- range $fonts }}
-{{- $fontSlice = $fontSlice | append (printf "%s:%s" (replace .name " " "+") (delimit .sizes ",")) }}
+{{- $fontSlice := $fontSlice | append (printf "%s:%s" (replace .name " " "+") (delimit .sizes ",")) }}
 {{- end }}
 {{- $fontsUrl := printf "https://fonts.googleapis.com/css?family=%s" (delimit $fontSlice "|") }}
 {{- $sansSerifFont := (index (where site.Params.fonts ".type" "sans_serif") 0).name }}
