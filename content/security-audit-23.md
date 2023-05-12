@@ -1,5 +1,5 @@
 ---
-title: in-toto Source Code and Specification Security Audit
+title: Security Audit '23
 ---
 
 We are excited to announce completion of a source code audit of the in-toto
@@ -31,7 +31,7 @@ In addition, several informational findings, not relevant to the security of the
 in-toto framework, were listed in the report. We created GitHub advisories for
 all security findings and GitHub issues for the informational findings
 ([implementation](https://github.com/in-toto/in-toto/issues?q=label%3AX41),
-[specification](https://github.com/in-toto/docs/issues?q=label%3AX41))
+[specification](https://github.com/in-toto/docs/issues?q=label%3AX41)).
 
 It shall be noted that all security-relevant issues can be mitigated by a
 correct usage of in-toto, or by understanding its scope. In fact the issue
@@ -39,12 +39,11 @@ marked high-severity was well known to us as a possible use pattern and had an
 issue open for several years.  Thus, our fixes consist, above all, of
 clarifications in the specification and usage documentation.  Below we give an
 overview of all security-relevant findings and our response to them. More
-comprehensive details can be found in the linked advisories. And the full report
-can be read here: FIXME
+comprehensive details can be found in the linked advisories, in the [report](TODO).
 
 ### File Metadata Ignored (medium severity)
 
-Advisory: https://github.com/in-toto/docs/security/advisories/GHSA-wqrg-wjp9-wqfq
+Advisory: [GHSA-wqrg-wjp9-wqfq](https://github.com/in-toto/docs/security/advisories/GHSA-wqrg-wjp9-wqfq)
 
 in-toto does not verify the integrity of file metadata. This might allow
 attackers to provoke privilege escalation or degradation of the final product.
@@ -56,7 +55,7 @@ as part of the file contents.
 
 ### Configuration Read From Local Directory (medium severity)
 
-Advisory: https://github.com/in-toto/in-toto/security/advisories/GHSA-wc64-c5rv-32pf
+Advisory: [GHSA-wqrg-wjp9-wqfq](https://github.com/in-toto/in-toto/security/advisories/GHSA-wc64-c5rv-32pf)
 
 CVE: [CVE-2023-32076](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-32076)
 
@@ -75,7 +74,7 @@ support for RC files from the reference implementation.
 
 ### Layout Replay (low severity)
 
-Advisory: https://github.com/in-toto/docs/security/advisories/GHSA-73jv-h86v-c2vh
+Advisory: [GHSA-73jv-h86v-c2vh](https://github.com/in-toto/docs/security/advisories/GHSA-73jv-h86v-c2vh)
 
 It is possible for an attacker to replay an older, since-replaced layout that
 has not yet expired.
@@ -90,7 +89,7 @@ conjunction with in-toto to defend against layout replay attacks.
 
 ### Link File Reuse (medium severity)
 
-Advisory: https://github.com/in-toto/docs/security/advisories/GHSA-6q78-j78h-pqm2
+Advisory: [GHSA-6q78-j78h-pqm2](https://github.com/in-toto/docs/security/advisories/GHSA-6q78-j78h-pqm2)
 
 Link metadata files are not inherently tied to a layout, which might allow an
 attacker to replay ​​steps by replacing link files with ones from an earlier
@@ -104,7 +103,7 @@ ITE-3 are designed to prevent unallowed metadata reuse.
 
 ### Functionaries Do Not Perform Verification (high severity)
 
-Advisory: https://github.com/in-toto/docs/security/advisories/GHSA-p86f-xmg6-9q4x
+Advisory: [GHSA-p86f-xmg6-9q4x](https://github.com/in-toto/docs/security/advisories/GHSA-p86f-xmg6-9q4x)
 
 An attacker, who controls the product in transit, may compromise the whole
 supply chain and stay undetected, by modifying only the product in transit, and
@@ -121,7 +120,7 @@ we have added, can be found in the advisory.
 
 ### Several PGP Issues (varying severity)
 
-Advisory: https://github.com/in-toto/in-toto/security/advisories/GHSA-jjgp-whrp-gq8m
+Advisory: [GHSA-jjgp-whrp-gq8m](https://github.com/in-toto/in-toto/security/advisories/GHSA-jjgp-whrp-gq8m)
 
 PGP keys in the reference implementation are not validated when verifying
 metadata signatures. More specifically, in-toto does not check if the validity

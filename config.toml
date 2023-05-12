@@ -126,6 +126,14 @@ weight = 1
 
 [[menu.main]]
 parent = "learn"
+name = "Security audit '23"
+url = "/security-audit-23"
+weight = 2
+
+[[menu.main]]
+parent = "learn"
 name = "Frequently asked questions"
 url = "/faq"
-weight = 2
+weight = 3
+
+
