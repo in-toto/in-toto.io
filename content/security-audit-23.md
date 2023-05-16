@@ -39,7 +39,8 @@ marked high-severity was well known to us as a possible use pattern and had an
 issue open for several years.  Thus, our fixes consist, above all, of
 clarifications in the specification and usage documentation.  Below we give an
 overview of all security-relevant findings and our response to them. More
-comprehensive details can be found in the linked advisories, in the [report](TODO).
+comprehensive details can be found in the linked advisories and the
+[report](/2023-security-audit-report.pdf).
 
 ### File Metadata Ignored (medium severity)
 
