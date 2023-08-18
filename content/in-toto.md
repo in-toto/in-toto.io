@@ -10,4 +10,4 @@ Although many frameworks exist to ensure security in the "last mile" (e.g., soft
 
 in-toto is designed to ensure the integrity of a software product from initiation to end-user installation. It does so by making it transparent to the user what steps were performed, by whom and in what order. As a result, with some guidance from the group creating the software, in-toto allows the user to verify if a step in the supply chain was intended to be performed, and if the step was performed by the right actor.
 
-You can read more about in-toto's internals in our [latest](https://github.com/in-toto/docs/raw/master/in-toto-spec.pdf) or [stable](https://github.com/in-toto/docs/blob/v0.9/in-toto-spec.pdf) specification.
+You can read more about in-toto's internals in our [latest](https://github.com/in-toto/docs/blob/master/in-toto-spec.md) or [stable](https://github.com/in-toto/docs/blob/v1.0/in-toto-spec.pdf) specification.
