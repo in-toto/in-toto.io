@@ -43,13 +43,6 @@ button_url = "https://github.com/in-toto"
 button_text = "Tools"
 img = "gears.png"
 
-[[params.features]]
-title = "Try it out!"
-description = "Get started today designing an in-toto layout using our web layout tool."
-button_url = "https://in-toto.engineering.nyu.edu"
-button_text = "Get started"
-img = "tool.png"
-
 [[menu.main]]
 identifier = "about"
 name = "About"
@@ -106,12 +99,6 @@ parent = "get-started"
 name = "Specifications"
 url = "/specs"
 weight = 3
-
-[[menu.main]]
-parent = "get-started"
-name = "Layout tool"
-url = "https://in-toto.engineering.nyu.edu"
-weight = 4
 
 [[menu.main]]
 identifier = "learn"
