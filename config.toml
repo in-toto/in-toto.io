@@ -74,7 +74,7 @@ weight = 1
 [[menu.main]]
 parent = "community"
 name = "Contribute"
-url = "https://github.com/in-toto/in-toto/"
+url = "https://github.com/in-toto/community/"
 weight = 2
 
 [[menu.main]]
