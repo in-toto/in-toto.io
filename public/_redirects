@@ -11,6 +11,9 @@ SPDX/v1.0.0       https://github.com/in-toto/attestation/blob/v0.1.0/spec/predic
 # Below version numbers are in the spec at the v1.0 tag
 Statement/v1      https://github.com/in-toto/attestation/blob/v1.0/spec/v1.0/statement.md
 
+# Below version numbers are in the spec at the v1.0.2 tag
+Release/v1        https://github.com/in-toto/attestation/blob/v1.0.2/spec/predicates/release.md
+
 # Bonus: v0.1.0 <-> v0.1
 Envelope/v0.1.0   https://github.com/in-toto/attestation/tree/v0.1.0/spec#envelope 
 Predicate/v0.1.0  https://github.com/in-toto/attestation/tree/v0.1.0/spec#predicate 
