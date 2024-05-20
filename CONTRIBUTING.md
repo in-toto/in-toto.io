@@ -53,7 +53,7 @@ Once Hugo is installed, you can serve the project locally to see your changes in
 make serve
 ```
 
-This will start a local server at http&#x3A; //localhost: XXXX/ where you can view the site.
+This will start a local server at `http://localhost:XXXX/` where you can view the site.
 
 ### 5. Review Contribution Guidelines
 
