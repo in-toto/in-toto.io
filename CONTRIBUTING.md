@@ -45,7 +45,7 @@ Run the following command:
 make serve
 ```
 
-This will start a local server at `http://localhost:XXXX/` where you can view the site.
+This will start a local server. You can view your site at the URL displayed in your terminal.
 
 ## Need Help?
 
