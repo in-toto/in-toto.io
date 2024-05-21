@@ -37,7 +37,9 @@ We use Hugo to build the site. Follow the [Hugo installation guide](https://gohu
 
 ### 4. Serve the Project
 
-Once Hugo is installed, you can serve the project locally to see your changes in real-time. Run the following command:
+Once Hugo is installed, you can serve the project locally to see your changes in real-time.
+The root of the directory contains a `Makefile` for automating development processes. The `make` CLI tool is usually installed by default on most systems (excluding Windows), but you can check if it is installed by running `make --version` on your terminal. If this command is unsuccessful, you will need to find the standard method for installing it for your system. For installing `make` on Windows, please see [here](https://gnuwin32.sourceforge.net/packages/make.htm).
+Run the following command:
 
 ```sh
 make serve
