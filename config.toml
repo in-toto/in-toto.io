@@ -84,21 +84,27 @@ weight = 3
 
 [[menu.main]]
 parent = "get-started"
+name = "Getting Started Guide"
+url = "/GettingStarted"
+weight = 1
+
+[[menu.main]]
+parent = "get-started"
 name = "Try it out"
 url = "https://github.com/in-toto/demo"
-weight = 1
+weight = 2
 
 [[menu.main]]
 parent = "get-started"
 name = "Metadata examples"
 url = "/metadata-examples"
-weight = 2
+weight = 3
 
 [[menu.main]]
 parent = "get-started"
 name = "Specifications"
 url = "/specs"
-weight = 3
+weight = 4
 
 [[menu.main]]
 identifier = "learn"
