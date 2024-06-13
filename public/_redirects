@@ -8,8 +8,8 @@ Link/v1.0.0       https://github.com/in-toto/attestation/tree/v0.1.0/spec/predic
 Provenance/v0.1.0 https://github.com/in-toto/attestation/tree/v0.1.0/spec/predicates/provenance.md
 SPDX/v1.0.0       https://github.com/in-toto/attestation/blob/v0.1.0/spec/predicates/spdx.md
 
-# Below version numbers are in the spec at the v1.0 tag
-Statement/v1      https://github.com/in-toto/attestation/blob/v1.0/spec/v1.0/statement.md
+# Below version numbers are in the spec at the v1.x tag
+Statement/v1      https://github.com/in-toto/attestation/blob/main/spec/v1/statement.md
 
 # Below version numbers use main branch
 Release/v0.1      https://github.com/in-toto/attestation/blob/main/spec/predicates/release.md
@@ -19,3 +19,10 @@ Envelope/v0.1.0   https://github.com/in-toto/attestation/tree/v0.1.0/spec#envelo
 Predicate/v0.1.0  https://github.com/in-toto/attestation/tree/v0.1.0/spec#predicate 
 Provenance/v0.1   https://github.com/in-toto/attestation/tree/v0.1.0/spec/predicates/provenance.md
 Statement/v0.1.0  https://github.com/in-toto/attestation/tree/v0.1.0/spec#statement
+
+# Below are vetted Attestation Framework predicates (versioned independently)
+attestation/link/v0.3 https://github.com/in-toto/attestation/tree/main/spec/predicates/link.md
+attestation/runtime-trace/v0.1 https://github.com/in-toto/attestation/tree/main/spec/predicates/runtime-trace.md
+attestation/scai/v0.2 https://github.com/in-toto/attestation/tree/main/spec/predicates/scai.md
+attestation/test-result/v0.1 https://github.com/in-toto/attestation/tree/main/spec/predicates/test-result.md
+attestation/vuln/v0.1 https://github.com/in-toto/attestation/tree/main/spec/predicates/vuln.md
