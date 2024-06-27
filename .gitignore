@@ -1,6 +1,10 @@
+/package-lock.json
+/yarn.lock
+
 # Hugo-generated assets
-resources/
-public/
+/.hugo_build.lock
+/resources
+/public
 
 # npm artifacts
 node_modules/

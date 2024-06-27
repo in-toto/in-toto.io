@@ -1,14 +1,16 @@
+HUGO?=npx hugo
+
 serve:
-	hugo server \
+	$(HUGO) server \
 		--buildDrafts \
 		--buildFuture \
 		--disableFastRender
 
 production-build:
-	hugo
+	$(HUGO)
 
 preview-build:
-	hugo \
+	$(HUGO) \
 		--baseURL $(DEPLOY_PRIME_URL) \
 		--buildDrafts \
 		--buildFuture

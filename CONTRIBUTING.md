@@ -28,12 +28,12 @@ Navigate to the project root directory and install the necessary dependencies wi
 
 ```sh
 cd in-toto.io
-yarn install
+npm install
 ```
 
 ### 3. Install Hugo
 
-We use Hugo to build the site. Follow the [Hugo installation guide](https://gohugo.io/installation/) to install Hugo on your system. 
+We use Hugo to build the site. Follow the [Hugo installation guide](https://gohugo.io/installation/) to install Hugo on your system.
 
 ### 4. Serve the Project
 
