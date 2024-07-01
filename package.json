@@ -1,5 +1,6 @@
 {
   "devDependencies": {
-    "bulma": "^0.9.4"
+    "bulma": "^0.9.4",
+    "hugo-extended": "^0.111.3"
   }
 }
