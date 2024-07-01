@@ -1,10 +1,11 @@
 baseURL = "https://in-toto.io"
 languageCode = "en-us"
 title = "in-toto"
+theme = ["docsy"]
 pygmentsUseClasses = true
 pygmentsCodefences = true
 enableRobotsTXT = true
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy"]
 
 [params]
 description = "A framework to secure the integrity of software supply chains"
