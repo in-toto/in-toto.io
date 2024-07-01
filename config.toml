@@ -1,6 +1,7 @@
 baseURL = "https://in-toto.io"
 languageCode = "en-us"
 title = "in-toto"
+theme = ["docsy"]
 pygmentsUseClasses = true
 pygmentsCodefences = true
 enableRobotsTXT = true
