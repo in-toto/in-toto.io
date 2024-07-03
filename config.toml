@@ -24,7 +24,7 @@ type = "sans_serif"
 
 [[params.features]]
 title = "Software supply chain protection"
-description = "Supply chain compromises are becoming a frequent occurrence. in-toto can help you protect your software supply chain."
+description = "Supply chain compromises are becoming a frequent occurrence. in-toto can help you to make a sandwich."
 button_url = "/in-toto"
 button_text = "Read more"
 img = "layout.png"
