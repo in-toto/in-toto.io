@@ -21,19 +21,19 @@ Statement/v1      https://github.com/in-toto/attestation/blob/main/spec/v1/state
 
 # Below are vetted Attestation Framework predicates (versioned independently)
 attestation/link https://github.com/in-toto/attestation/tree/main/spec/predicates/link.md
-attestation/link/v0.3 https://github.com/in-toto/attestation/tree/main/spec/predicates/link.md
+attestation/link/v* https://github.com/in-toto/attestation/tree/main/spec/predicates/link.md
 
 attestation/release https://github.com/in-toto/attestation/tree/main/spec/predicates/release.md
-attestation/release/v0.1 https://github.com/in-toto/attestation/tree/main/spec/predicates/release.md
+attestation/release/v* https://github.com/in-toto/attestation/tree/main/spec/predicates/release.md
 
 attestation/runtime-trace https://github.com/in-toto/attestation/tree/main/spec/predicates/runtime-trace.md
-attestation/runtime-trace/v0.1 https://github.com/in-toto/attestation/tree/main/spec/predicates/runtime-trace.md
+attestation/runtime-trace/v* https://github.com/in-toto/attestation/tree/main/spec/predicates/runtime-trace.md
 
 attestation/scai/attribute-report/ https://github.com/in-toto/attestation/tree/main/spec/predicates/scai.md
-attestation/scai/attribute-report/v0.2 https://github.com/in-toto/attestation/tree/main/spec/predicates/scai.md
+attestation/scai/attribute-report/v* https://github.com/in-toto/attestation/tree/main/spec/predicates/scai.md
 
 attestation/test-result https://github.com/in-toto/attestation/tree/main/spec/predicates/test-result.md
-attestation/test-result/v0.1 https://github.com/in-toto/attestation/tree/main/spec/predicates/test-result.md
+attestation/test-result/v* https://github.com/in-toto/attestation/tree/main/spec/predicates/test-result.md
 
 attestation/vulns https://github.com/in-toto/attestation/tree/main/spec/predicates/vuln.md
-attestation/vulns/v0.1 https://github.com/in-toto/attestation/tree/main/spec/predicates/vuln.md
+attestation/vulns/v* https://github.com/in-toto/attestation/tree/main/spec/predicates/vuln.md
