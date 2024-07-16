@@ -29,11 +29,11 @@ attestation/release/v0.1 https://github.com/in-toto/attestation/tree/main/spec/p
 attestation/runtime-trace https://github.com/in-toto/attestation/tree/main/spec/predicates/runtime-trace.md
 attestation/runtime-trace/v0.1 https://github.com/in-toto/attestation/tree/main/spec/predicates/runtime-trace.md
 
-attestation/scai https://github.com/in-toto/attestation/tree/main/spec/predicates/scai.md
-attestation/scai/v0.2 https://github.com/in-toto/attestation/tree/main/spec/predicates/scai.md
+attestation/scai/attribute-report/ https://github.com/in-toto/attestation/tree/main/spec/predicates/scai.md
+attestation/scai/attribute-report/v0.2 https://github.com/in-toto/attestation/tree/main/spec/predicates/scai.md
 
 attestation/test-result https://github.com/in-toto/attestation/tree/main/spec/predicates/test-result.md
 attestation/test-result/v0.1 https://github.com/in-toto/attestation/tree/main/spec/predicates/test-result.md
 
-attestation/vuln https://github.com/in-toto/attestation/tree/main/spec/predicates/vuln.md
-attestation/vuln/v0.1 https://github.com/in-toto/attestation/tree/main/spec/predicates/vuln.md
+attestation/vulns https://github.com/in-toto/attestation/tree/main/spec/predicates/vuln.md
+attestation/vulns/v0.1 https://github.com/in-toto/attestation/tree/main/spec/predicates/vuln.md
