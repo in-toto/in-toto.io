@@ -1,7 +1,6 @@
 {
   "scripts": {
     "_build": "npm run _hugo-dev --",
-    "_hugox": "echo && echo \"FIXME: hugo should be run with --cleanDestinationDir\" && echo && hugo",
     "_hugo": "hugo --cleanDestinationDir",
     "_hugo-dev": "npm run _hugo -- -e dev -DF",
     "_serve": "npm run _hugo-dev -- --minify --disableFastRender serve",
