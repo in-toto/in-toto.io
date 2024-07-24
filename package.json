@@ -1,6 +1,21 @@
 {
+  "scripts": {
+    "_build": "npm run _hugo-dev --",
+    "_hugox": "echo && echo \"FIXME: hugo should be run with --cleanDestinationDir\" && echo && hugo",
+    "_hugo": "hugo --cleanDestinationDir",
+    "_hugo-dev": "npm run _hugo -- -e dev -DF",
+    "_serve": "npm run _hugo-dev -- --minify --disableFastRender serve",
+    "build:preview": "npm run _hugo-dev -- --minify --baseURL \"${DEPLOY_PRIME_URL:-http://localhost}\"",
+    "build:production": "npm run _hugo -- --minify",
+    "build": "npm run _build --",
+    "clean": "rm -Rf node_modules public/* resources",
+    "make:public": "make -p public && git init -b main public",
+    "serve": "npm run _serve --",
+    "test": "npm run build"
+  },
   "devDependencies": {
     "bulma": "^0.9.4",
     "hugo-extended": "^0.111.3"
-  }
+  },
+  "spelling": "cSpell:ignore bulma -"
 }
