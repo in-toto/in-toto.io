@@ -8,7 +8,7 @@
     "build:production": "npm run _hugo -- --minify",
     "build": "npm run _build --",
     "clean": "rm -Rf node_modules public/* resources",
-    "make:public": "make -p public && git init -b main public",
+    "make:public": "mkdir -p public && git init -b main public",
     "serve": "npm run _serve --",
     "test": "npm run build"
   },
