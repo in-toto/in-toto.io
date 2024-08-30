@@ -1,12 +1,13 @@
-# Hugo
-.hugo_build.lock
+/package-lock.json
+/yarn.lock
+
+# Hugo-generated assets
+/.hugo_build.lock
+/resources
 /public
-resources/
 
-# NPM
-
-/node_modules
-package-lock.json
+# npm artifacts
+node_modules/
 
 # Other
 tmp
