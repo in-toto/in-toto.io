@@ -1,0 +1,120 @@
+baseURL: https://in-toto.io/
+title: in-toto
+enableRobotsTXT: true
+enableGitInfo: true
+theme: [docsy]
+
+pygmentsCodeFences: true
+pygmentsUseClasses: false
+pygmentsUseClassic: false
+pygmentsStyle: tango
+
+outputs:
+  home: [HTML]
+  page: [HTML]
+  section: [HTML, RSS, print]
+
+imaging:
+  resampleFilter: CatmullRom
+  quality: 75
+  anchor: smart
+
+languages:
+  en:
+    languageName: English
+    params:
+      description: A framework to secure the integrity of software supply chains
+
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false # Required for dark-mode
+
+params:
+  logo: /images/logo.png
+  copyright:
+    authors: >-
+      in-toto Authors | Documentation Distributed under CC-BY-4.0[CC BY
+      4.0](https://creativecommons.org/licenses/by/4.0)
+    from_year: 2020
+  version: 0.10.0
+  url_latest_version: https://in-toto.io/docs/
+  github_repo: https://github.com/in-toto/in-toto.io
+  github_project_repo: https://github.com/in-toto/in-toto
+  github_subdir: userguide
+  time_format_blog: Monday, January 02, 2006
+  time_format_default: January 2, 2006
+  rss_sections: [blog] # TODO: drop since this is the default
+  gcs_engine_id: 011217106833237091527:la2vtv2emlw
+  offlineSearch: false
+  offlineSearchSummaryLength: 70
+  offlineSearchMaxResults: 10
+  prism_syntax_highlighting: false
+  search:
+    # algolia:
+  ui:
+    showLightDarkModeMenu: true
+    sidebar_cache_limit: 10
+    sidebar_menu_compact: true
+    sidebar_menu_foldable: false
+    sidebar_search_disable: true
+    feedback:
+      enable: true
+      'yes': >-
+        Glad to hear it! Please <a
+        href="https://github.com/in-toto/in-toto.io/issues/new">tell us how we
+        can improve</a>.
+      'no': >-
+        Sorry to hear that. Please <a
+        href="https://github.com/in-toto/in-toto.io/issues/new">tell us how we
+        can improve</a>.
+    readingtime:
+      enable: false
+  links:
+    user:
+      - name: GitHub Discussions
+        url: https://github.com/in-toto/community
+        icon: fa-brands fa-github
+        desc: Discussion and help from your fellow users
+      - name: User mailing list
+        url: mailto:in-toto-public@googlegroups.com
+        icon: fa-solid fa-envelope
+        desc: Sign up for Docsy announcements
+      - name: Slack
+        url: https://slack.cncf.io/
+        icon: fa-brands fa-slack
+        desc: in-toto on CNCF Slack Workspace
+      - name: IRC
+        url: https://web.libera.chat/#in-toto
+        icon: fa-solid fa-comments
+        desc: in-toto on libera
+      - name: Email the Developers
+        url: mailto:in-toto-dev@googlegroups.com
+        icon: fa-solid fa-envelope
+        desc: Email the developers
+
+  plantuml:
+    enable: true
+    theme: default
+    svg_image_url: https://www.plantuml.com/plantuml/svg/
+    svg: false
+  print:
+    disable_toc: false
+  markmap:
+    enable: true
+  drawio:
+    enable: true
+
+taxonomies:
+  tag: tags
+  category: categories
+
+module:
+  mounts:
+    - source: content/en
+      target: content

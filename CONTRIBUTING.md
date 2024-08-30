@@ -1,54 +1,28 @@
-# Contributing to in-toto.io
+# How to Contribute
 
-Thank you for considering contributing to in-toto.io! Here are the steps to set up the project on your local machine.
+We'd love to accept your patches and contributions to this project. There are
+just a few small guidelines you need to follow.
 
-## Review Contribution Guidelines
+## Contributor License Agreement
 
-Before contributing, please review our detailed [contribution guidelines](https://github.com/in-toto/community/blob/main/CONTRIBUTING.md) to ensure that your code follows our style guidelines and is properly tested.
+Contributions to this project must be accompanied by a Contributor License
+Agreement. You (or your employer) retain the copyright to your contribution;
+this simply gives us permission to use and redistribute your contributions as
+part of the project. Head over to <https://cla.developers.google.com/> to see
+your current agreements on file or to sign a new one.
 
-## Sign the Developer Certificate of Origin (DCO)
+You generally only need to submit a CLA once, so if you've already submitted one
+(even if it was for a different project), you probably don't need to do it
+again.
 
-All contributors must sign the Developer Certificate of Origin (DCO) by adding a "Signed-off-by" line to their commit messages. This indicates your acceptance of the DCO. You can do this by appending the following line to each commit message (see [git commit --signoff](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---signoff))
+## Code reviews
 
-## Quick Start Guide
+All submissions, including submissions by project members, require review. We
+use GitHub pull requests for this purpose. Consult
+[GitHub Help](https://help.github.com/articles/about-pull-requests/) for more
+information on using pull requests.
 
-To get started with contributing to in-toto.io, follow these steps:
+## Community Guidelines
 
-### 1. Clone the Repository
-
-Clone the in-toto.io git repository to your local machine:
-
-```sh
-git clone https://github.com/in-toto/in-toto.io.git
-```
-
-### 2. Install Development Dependencies
-
-Navigate to the project root directory and install the necessary dependencies with Yarn. If you do not have Yarn installed, please install it by following the instructions on the [Yarn installation guide](https://classic.yarnpkg.com/en/docs/install):
-
-```sh
-cd in-toto.io
-npm install
-```
-
-### 3. Install Hugo
-
-We use Hugo to build the site. Follow the [Hugo installation guide](https://gohugo.io/installation/) to install Hugo on your system.
-
-### 4. Serve the website
-
-Once Hugo is installed, you can locally serve the website to see your changes in
-real-time:
-
-```sh
-npm run serve
-```
-
-This starts a local server. View the site at the URL displayed in your
-terminal, usually <http://localhost:1313>.
-
-## Need Help?
-
-If you encounter any issues or have any questions, feel free to open an issue on the repository or reach out to the maintainers.
-
-**Happy contributing!**
+This project follows
+[Google's Open Source Community Guidelines](https://opensource.google.com/conduct/).

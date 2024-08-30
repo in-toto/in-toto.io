@@ -1,4 +1,28 @@
 {{ $news := site.Data.news }}
+<style>
+  .container {
+      margin: auto;
+      padding: 20px;
+    }
+
+  .columns {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .is-2 {
+      flex: 0 0 16.67%; /* Equivalent to 2 out of 12 columns */
+      font-weight: bold;
+      color: #555;
+    }
+
+  .column-content {
+    flex: 1;
+    margin-left: 20px;
+  }
+
+</style>
 <div class="container">
   {{ range $news }}
   {{ $date := dateFormat "January 2, 2006" .date }}
