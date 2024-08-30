@@ -1,6 +1,13 @@
 [build]
 publish = "public"
-command = "npm run build"
+command = "npm run build:preview"
 
 [context.production]
-command = "npm run build"
+command = "npm run build:production"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Content-Security-Policy = "default-src 'self' code.jquery.com fonts.googleapis.com fonts.gstatic.com use.fontawesome.com"
