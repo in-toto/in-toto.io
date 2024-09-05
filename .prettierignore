@@ -1,0 +1,6 @@
+# Temporary: ignore top-level *.md until docsy branch is merged into main
+CONTRIBUTING.md
+README.md
+
+/themes
+/layouts

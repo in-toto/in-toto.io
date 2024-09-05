@@ -1,11 +1,21 @@
 - version: in-toto Stable (v1.0)
   url: https://github.com/in-toto/docs/blob/v1.0/in-toto-spec.md
-  description: This is a thoroughly-reviewed version of the specification (and probably what you're looking for).
+  description:
+    This is a thoroughly-reviewed version of the specification (and probably
+    what you're looking for).
 - version: in-toto Latest
   url: https://github.com/in-toto/docs/blob/master/in-toto-spec.md
-  description: If you want to see the latest changes and possible features, click this.
+  description:
+    If you want to see the latest changes and possible features, click this.
 - version: in-toto Attestation Framework Stable (v1.0)
   url: https://github.com/in-toto/attestation/tree/v1.0/
-  description: The in-toto Attestation Framework is developed independently of the in-toto specification. A future version of the in-toto specification will incorporate this framework as the mechanism to express software supply chain claims.
+  description:
+    The in-toto Attestation Framework is developed independently of the in-toto
+    specification. A future version of the in-toto specification will
+    incorporate this framework as the mechanism to express software supply chain
+    claims.
 - version: in-toto Attestation Framework Latest
-  description: If you want to see the latest changes to the in-toto Attestation Framework, click this.
+  url: https://github.com/in-toto/attestation/tree/main
+  description:
+    If you want to see the latest changes to the in-toto Attestation Framework,
+    click this.

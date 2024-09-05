@@ -48,13 +48,13 @@
     We released the first version of the [official in-toto Jenkins plugin](https://plugins.jenkins.io/in-toto). This provenance Agent will help you track and sign link metadata for any step within your pipeline in a secure and distributed way.
 - date: 2018-10-19
   text: |
-    [Colin Domoney gave a talk on this year's DevSecCon London](https://www.devseccon.com/london-2018/session/supply-chain-achilles-heel/). He covered some of the fundamentals of in-toto to protect your cloud native deployment, as well as some other good supply-chain security practices. 
+    [Colin Domoney gave a talk on this year's DevSecCon London](https://www.devseccon.com/london-2018/session/supply-chain-achilles-heel/). He covered some of the fundamentals of in-toto to protect your cloud native deployment, as well as some other good supply-chain security practices.
 - date: 2018-05-29
   text: |
     [Pacman 5.1 has been released](http://allanmcrae.com/2018/05/pacman-5-1-dont-use-the-force-luke/)! This new version adds support for reproducible builds, and includes a security check for tampered [git tag metadata](https://lists.archlinux.org/pipermail/pacman-dev/2017-September/022123.html).
 - date: 2018-05-17
   text: |
-    A [LWN](https://lwn.net/Articles/754443/) article has been published, covering various supply chain security issues and their solutions, including grafeas, the update framework, and in-toto. 
+    A [LWN](https://lwn.net/Articles/754443/) article has been published, covering various supply chain security issues and their solutions, including grafeas, the update framework, and in-toto.
 - date: 2018-05-02
   text: |
     We presented in-toto along with Grafeas at [Kubecon 2018](https://kccnceu18.sched.com/event/Dqtx/completely-securing-the-software-supply-chain-using-grafeas-in-toto-lukas-puehringer-nyu-wendy-dembowski-google-any-skill-level-slides-attached?iframe=yes&w=100%&sidebar=yes&bg=no#).
@@ -78,7 +78,7 @@
     We presented a demo of in-toto at [Dockercon 2017](https://2017.dockercon.com). You can watch the video [here](https://www.youtube.com/watch?v=SNge7-t4JRE&index=34&list=PLkA60AVN3hh_nihZ1mh6cO3n-uMdF7UlV).
 - date: 2017-01-17
   text: |
-    A fix to our git tag metadata tampering vulnerability was merged into git's master branch and will be available starting from [git v2.12](https://public-inbox.org/git/20170117233723.23897-1-santiago@nyu.edu/). You can read more about it in our [USENIX '16](https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/torres-arias) paper. 
+    A fix to our git tag metadata tampering vulnerability was merged into git's master branch and will be available starting from [git v2.12](https://public-inbox.org/git/20170117233723.23897-1-santiago@nyu.edu/). You can read more about it in our [USENIX '16](https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/torres-arias) paper.
 - date: 2016-10-14
   text: |
     We presented a demo of in-toto in the [Docker Distributed System Summit](https://blog.docker.com/2016/10/docker-distributed-system-summit-videos-podcast-episodes/). You can watch the video [here](https://youtu.be/Aryr0O6H_2U?t=25m58s).
