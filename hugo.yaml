@@ -36,7 +36,7 @@ markup:
     noClasses: false # Required for dark-mode
 
 params:
-  logo: /images/logo.png
+  logo: /img/logo.png
   copyright:
     authors: >-
       in-toto Authors | Documentation Distributed under CC-BY-4.0[CC BY

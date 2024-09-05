@@ -5,7 +5,7 @@ description: A framework to secure the integrity of software supply chains
 
 {{% blocks/cover image_anchor="top" height="max" %}}
 
-<img src="/images/in-toto-horizontal-white.svg" alt="in-toto" class="in-toto-logo" style="max-width: 40rem; height: auto;">
+<img src="/img/in-toto-horizontal-white.svg" alt="in-toto" class="in-toto-logo" style="max-width: 40rem; height: auto;">
 
 <div class="display-6">
 {{% param description %}}
@@ -17,7 +17,7 @@ More</a>
 <a class="btn btn-lg btn-primary me-3" href="https://github.com/in-toto/demo">Try
 the demo</a>
 <a class="btn btn-lg btn-primary" href="https://github.com/in-toto/friends">Explore
-integrations</a> 
+integrations</a>
 </div>
 
 <div class="h3 mt-4">
@@ -54,7 +54,7 @@ supply chain toolchain.** {{% /blocks/feature %}}
 [![CNCF logo][]][cncf]
 
 [cncf]: https://cncf.io
-[cncf logo]: /images/cncf-white.svg
+[cncf logo]: /img/cncf-white.svg
 [incubating]: https://www.cncf.io/projects/
 
 {{% /blocks/section %}}

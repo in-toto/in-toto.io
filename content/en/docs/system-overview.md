@@ -177,7 +177,7 @@ checks:
 
 If all of these verifications pass, then installation continues as usual.
 
-![Supply Chain Example](/images/in-toto-metadata.png) Figure 1: The supply chain
+![Supply Chain Example](/img/in-toto-metadata.png) Figure 1: The supply chain
 pieces for this example
 
 ## Final Product
