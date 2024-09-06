@@ -1,0 +1,23 @@
+// Due to the site's Content-Security-Policy, we must move inline styles
+// into this file. For some context, see:
+// https://github.com/theupdateframework/theupdateframework.io/issues/73
+
+// The following styles appear in the HTML generated for the ...
+
+// Navbar
+
+.navbar-logo>svg .cls-1 {
+  fill: green;
+}
+
+// Homepage: it will need to be updated when the hero image is changed.
+
+#td-cover-block-0 {
+  background-image: url(/featured-background_hu5459c0360c2b0cb7a147d2df0eb350ca_6445823_960x540_fill_q75_catmullrom_top.jpg)
+}
+
+@media only screen and (min-width:1200px) {
+  #td-cover-block-0 {
+    background-image: url(/featured-background_hu5459c0360c2b0cb7a147d2df0eb350ca_6445823_1920x1080_fill_q75_catmullrom_top.jpg)
+  }
+}
