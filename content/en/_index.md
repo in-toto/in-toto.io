@@ -21,15 +21,18 @@ integrations</a>
 </div>
 
 <div class="h3 mt-4">
-<a class="btn btn-lg btn-secondary" href="docs/getting-started/">Get started <i class="fas fa-arrow-right"></i></a>
+<a class="btn btn-lg btn-secondary" href="docs/getting-started/">Get started</i></a>
 </div>
 
 {{% /blocks/cover %}}
 
-{{% blocks/lead color="primary" %}} **in-toto is designed to ensure the
-integrity of a software product from initiation to end-user installation. It
-does so by making it transparent to the user what steps were performed, by whom
-and in what order.** {{% /blocks/lead %}}
+{{% blocks/lead color="primary" %}}
+
+in-toto is designed to ensure the integrity of a software product from
+initiation to end-user installation. It does so by making it transparent to the
+user what steps were performed, by whom and in what order.
+
+{{% /blocks/lead %}}
 
 {{% blocks/section color="dark" type="row" %}}
 
