@@ -5,13 +5,13 @@ description: A framework to secure the integrity of software supply chains
 
 {{% blocks/cover image_anchor="top" height="max" %}}
 
-<img src="/img/in-toto-horizontal-white.svg" alt="in-toto" class="in-toto-logo" style="max-width: 40rem; height: auto;">
+<img src="/img/in-toto-horizontal-white.svg" alt="in-toto" class="in-toto-logo">
 
-<div class="display-6">
+<!-- prettier-ignore -->
 {{% param description %}}
-</div>
+{.display-6}
 
-<div class="p-initial my-5">
+<div class="p-initial mt-5">
 <a class="btn btn-lg btn-primary me-3" href="docs/what-is-in-toto/">Learn
 More</a>
 <a class="btn btn-lg btn-primary me-3" href="https://github.com/in-toto/demo">Try
@@ -23,7 +23,7 @@ integrations</a>
 <div class="h3 mt-4">
 <a class="btn btn-lg btn-secondary" href="docs/getting-started/">Get started <i class="fas fa-arrow-right"></i></a>
 </div>
-{{% blocks/link-down color="info" %}}
+
 {{% /blocks/cover %}}
 
 {{% blocks/lead color="primary" %}} **in-toto is designed to ensure the
