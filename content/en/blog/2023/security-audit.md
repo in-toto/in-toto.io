@@ -1,8 +1,9 @@
 ---
 title: Security Audit '23
 date: 2023-05-11
-author:
-  'Aditya Sirish, [NYU Secure Systems Lab](https://ssl.engineering.nyu.edu)'
+aliases: [/security-audit-23]
+author: >
+  Aditya Sirish, [NYU Secure Systems Lab](https://ssl.engineering.nyu.edu)
 ---
 
 We are excited to announce completion of a source code audit of the in-toto
