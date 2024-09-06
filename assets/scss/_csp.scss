@@ -6,18 +6,26 @@
 
 // Navbar
 
-.navbar-logo>svg .cls-1 {
-  fill: green;
+.navbar-logo > svg {
+  .cls-1 {
+    fill: #ff3800;
+  }
+  .cls-2 {
+    fill: #ff3800;
+  }
+  .cls-3 {
+    fill: #0089dd;
+  }
 }
 
 // Homepage: it will need to be updated when the hero image is changed.
 
 #td-cover-block-0 {
-  background-image: url(/featured-background_hu5459c0360c2b0cb7a147d2df0eb350ca_6445823_960x540_fill_q75_catmullrom_top.jpg)
+  background-image: url(/featured-background_hu5459c0360c2b0cb7a147d2df0eb350ca_6445823_960x540_fill_q75_catmullrom_top.jpg);
 }
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width: 1200px) {
   #td-cover-block-0 {
-    background-image: url(/featured-background_hu5459c0360c2b0cb7a147d2df0eb350ca_6445823_1920x1080_fill_q75_catmullrom_top.jpg)
+    background-image: url(/featured-background_hu5459c0360c2b0cb7a147d2df0eb350ca_6445823_1920x1080_fill_q75_catmullrom_top.jpg);
   }
 }

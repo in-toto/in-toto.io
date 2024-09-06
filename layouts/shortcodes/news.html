@@ -1,34 +1,15 @@
 {{ $news := site.Data.news }}
-<style>
-  .columns {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 10px;
-  }
-  
-  .is-2 {
-      flex: 0 0 16.67%; /* Equivalent to 2 out of 12 columns */
-      font-weight: bold;
-      color: #555;
-    }
-
-  .column-content {
-    flex: 1;
-    margin-left: 20px;
-  }
-
-</style>
-<div class="container">
+<div class="in-toto-news">
   {{ range $news }}
   {{ $date := dateFormat "January 2, 2006" .date }}
-  <div class="columns content is-medium">
+  <div class="in-toto-columns in-toto-content is-medium">
     <div class="column is-2">
       <strong>
         {{ $date }}
       </strong>
     </div>
 
-    <div class="column">
+    <div class="in-toto-column">
       {{ .text | markdownify }}
     </div>
   </div>
