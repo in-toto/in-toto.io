@@ -1,18 +1,17 @@
-baseURL: https://in-toto.io/
+baseURL: https://in-toto.io
 title: in-toto
-enableRobotsTXT: true
-enableGitInfo: true
-theme: [docsy]
 
-pygmentsCodeFences: true
-pygmentsUseClasses: false
-pygmentsUseClassic: false
-pygmentsStyle: tango
+disableAliases: true # We do redirects via Netlify's _redirects file
+disableKinds: [taxonomy]
+enableGitInfo: true
+enableRobotsTXT: true
+
+theme: [docsy]
 
 outputs:
   home: [HTML]
   page: [HTML]
-  section: [HTML, RSS, print]
+  section: [HTML]
 
 imaging:
   resampleFilter: CatmullRom
@@ -30,6 +29,7 @@ markup:
     parser:
       attribute:
         block: true
+      wrapStandAloneImageWithinParagraph: false
     renderer:
       unsafe: true
   highlight:
@@ -39,42 +39,27 @@ params:
   logo: /img/logo.png
   copyright:
     authors: >-
-      in-toto Authors | Documentation Distributed under CC-BY-4.0[CC BY
+      in-toto Authors | Docs [CC BY
       4.0](https://creativecommons.org/licenses/by/4.0)
     from_year: 2020
-  version: 0.10.0
-  url_latest_version: https://in-toto.io/docs/
   github_repo: https://github.com/in-toto/in-toto.io
-  github_project_repo: https://github.com/in-toto/in-toto
-  github_subdir: userguide
-  time_format_blog: Monday, January 02, 2006
-  time_format_default: January 2, 2006
-  rss_sections: [blog] # TODO: drop since this is the default
-  gcs_engine_id: 011217106833237091527:la2vtv2emlw
-  offlineSearch: false
-  offlineSearchSummaryLength: 70
-  offlineSearchMaxResults: 10
-  prism_syntax_highlighting: false
-  search:
-    # algolia:
+  # gcs_engine_id: 011217106833237091527:la2vtv2emlw # FIXME: get ID for this site
+
   ui:
     showLightDarkModeMenu: true
-    sidebar_cache_limit: 10
     sidebar_menu_compact: true
     sidebar_menu_foldable: false
     sidebar_search_disable: true
     feedback:
-      enable: true
+      enable: false # Disable until we have a proper CSP-compatible solution
       'yes': >-
-        Glad to hear it! Please <a
-        href="https://github.com/in-toto/in-toto.io/issues/new">tell us how we
-        can improve</a>.
+        Thank you. Your feedback is appreciated!
+      # prettier-ignore
       'no': >-
-        Sorry to hear that. Please <a
-        href="https://github.com/in-toto/in-toto.io/issues/new">tell us how we
-        can improve</a>.
-    readingtime:
-      enable: false
+        Please let us know <a class="external-link" target="_blank" rel="noopener"
+        href="https://github.com/in-toto/in-toto.io/issues/new?title=Page%20feedback&body=Suggested%20improvements%20for%20page:%20ADD%20PAGE-URL-HERE">how
+        we can improve this page</a>. Your feedback is appreciated!
+
   links:
     user:
       - name: GitHub Discussions
@@ -84,7 +69,7 @@ params:
       - name: User mailing list
         url: mailto:in-toto-public@googlegroups.com
         icon: fa-solid fa-envelope
-        desc: Sign up for Docsy announcements
+        desc: Sign up for announcements
       - name: Slack
         url: https://slack.cncf.io/
         icon: fa-brands fa-slack
@@ -93,26 +78,10 @@ params:
         url: https://web.libera.chat/#in-toto
         icon: fa-solid fa-comments
         desc: in-toto on libera
-      - name: Email the Developers
+      - name: Email developers
         url: mailto:in-toto-dev@googlegroups.com
         icon: fa-solid fa-envelope
-        desc: Email the developers
-
-  plantuml:
-    enable: true
-    theme: default
-    svg_image_url: https://www.plantuml.com/plantuml/svg/
-    svg: false
-  print:
-    disable_toc: false
-  markmap:
-    enable: true
-  drawio:
-    enable: true
-
-taxonomies:
-  tag: tags
-  category: categories
+        desc: Email developers
 
 module:
   mounts:
