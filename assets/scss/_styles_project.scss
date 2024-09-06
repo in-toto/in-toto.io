@@ -38,7 +38,7 @@
 
     a {
       color: white;
-      .external-link:after {
+      &.external-link:after {
         display: none;
       }
     }
