@@ -1,6 +1,6 @@
 - date: 2023-06-05
   text: |
-    in-toto's specification reached v1.0! Find it [here](https://github.com/in-toto/docs/blob/v1.0/in-toto-spec.md).
+    in-toto's specification [reaches v1.0](https://github.com/in-toto/docs/blob/v1.0/in-toto-spec.md)!
 - date: 2022-03-10
   text: |
     in-toto has moved from the Cloud Native Computing Foundation (CNCF) Sandbox to the Incubator! Read the full announcement [here](https://www.cncf.io/blog/2022/03/10/supply-chain-security-project-in-toto-moves-to-the-cncf-incubator/).
