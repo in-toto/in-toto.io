@@ -1,12 +1,8 @@
 ---
-title: 'System Overview'
-description:
-  'An overview of the in-toto framework, detailing its components and workflow
-  for software supply chain security.'
+title: Overview
+description: Overview of the in-toto framework
 weight: 3
 ---
-
-## System Overview
 
 The main goal of in-toto is to provide authentication, integrity and
 auditability guarantees for the supply chain that created a final product that a
@@ -44,7 +40,7 @@ viewpoint of an operating system’s package manager. This is an error-free case
    additional inspection steps. If verification is successful, installation is
    carried out as usual.
 
-### 2.1 Involved parties and their roles
+## 2.1 Involved parties and their roles
 
 In the context of in-toto, a role is a set of duties and actions that an actor
 must perform.
@@ -66,7 +62,7 @@ In addition, there are third-party equivalents of the above roles, which are
 managed by the sublayout mechanism, described in section 2.1.3. We will
 elaborate on these roles in depth now.
 
-#### 2.1.1 Project owner
+### 2.1.1 Project owner
 
 As previously stated, the project owner sets the required steps to be performed
 in the supply chain. For each step, its requirements, and the specific public
@@ -74,7 +70,7 @@ keys that can sign for evidence of the step are included to ensure compliance
 and accountability. In addition, the layout file will contain the definition of
 inspection steps to be carried out when verifying the final product.
 
-#### 2.1.2 Functionaries
+### 2.1.2 Functionaries
 
 Functionaries are intended to carry out steps within the supply chain, and to
 provide evidence of this by means of link metadata.
@@ -88,7 +84,7 @@ supply chain a sublayout. In this case, a subset of the steps to be performed
 are defined by such a functionary, who adopts the role of a project owner for
 this sublayout.
 
-#### 2.1.3 Clients
+### 2.1.3 Clients
 
 Clients are users or automated tools who want to use the product.
 
@@ -101,7 +97,7 @@ by the layout for this inspection step.
 A client will likely not interact with the in-toto framework directly, as it
 should be integrated into system installation tools, or package managers.
 
-#### 2.1.4 Third-party sublayouts
+### 2.1.4 Third-party sublayouts
 
 Sublayouts allow a functionary to further define steps within the supply chain.
 When a functionary defines a sublayout, instead of carrying out the next step,
@@ -114,7 +110,7 @@ example, a package maintainer for a Linux distribution will likely trust all the
 steps in the version control system as a sublayout defined by upstream
 developers of each package.
 
-### 2.2 in-toto components
+## 2.2 in-toto components
 
 A in-toto implementation contains three main components:
 
@@ -132,7 +128,7 @@ A in-toto implementation contains three main components:
    of the reference implementation, the tool performing this operation is
    "in-toto-verify".
 
-### 2.3 System workflow example
+## 2.3 System workflow example
 
 To exemplify how these roles interact, we will describe a simple scenario. We
 provide more specific scenarios in section 5.3, after we have presented a more
@@ -193,7 +189,7 @@ For example, a project may want to impose a review policy on the VCS. Thus, it
 requires in-toto to validate additional accompanying link and layout metadata to
 verify the review policy was followed.
 
-### 3.1 Contents
+## 3.1 Contents
 
 The final product must contain at least these three files:
 
@@ -205,7 +201,7 @@ More complex and robust supply chain layouts will contain more pieces of link
 metadata, as well as additional sublayout files. Additional metadata (e.g., a
 signed git commit log) can also be provided to be used during inspection phases.
 
-#### 3.1.1 Supply chain Layout
+### 3.1.1 Supply chain Layout
 
 The supply chain layout specifies each of the different steps and its
 requirements, as well as the public keys used by functionaries to sign the link
@@ -214,7 +210,7 @@ metadata for steps within the chain.
 The layout will also specify how each piece of link metadata will be verified,
 and how the chain steps are interconnected via their materials and products.
 
-#### 3.1.2 Link metadata
+### 3.1.2 Link metadata
 
 Link metadata is a statement that a step was carried out. Each piece of link
 metadata will be used by the framework to ensure that the contents of materials
@@ -227,13 +223,13 @@ chains. in-toto supports such scenarios by not directly associating link
 metadata with a specific layout. Multiple layouts, therefore, can use the same
 link metadata during their respective verifications.
 
-#### 3.1.3 Target files
+### 3.1.3 Target files
 
 Target files are the files clients will install and use in their systems. For
 example, a target file could be an installation disk image, which will be
 bundled with link metadata for each step performed to create the target file.
 
-#### 3.1.4 Additional metadata files
+### 3.1.4 Additional metadata files
 
 Additional metadata files can be shipped within the final product for
 verification. In this case, inspection steps that utilize this metadata can be

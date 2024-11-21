@@ -28,15 +28,13 @@ integrations</a>
 
 {{% blocks/lead color="primary" %}}
 
-in-toto is designed to ensure the integrity of a software product from
-initiation to end-user installation. It does so by making it transparent to the
-user what steps were performed, by whom and in what order.
+{{% param whatIsInToto %}}
 
 {{% /blocks/lead %}}
 
 {{% blocks/section color="dark" type="row" %}}
 
-{{% blocks/feature icon="fa-solid fa-lock" title="Software supply chain protection" url="/docs/system-overview/" %}}
+{{% blocks/feature icon="fa-solid fa-lock" title="Software supply chain protection" url="/docs/overview/" %}}
 **Supply chain compromises are becoming a frequent occurrence. in-toto can help
 you protect your software supply chain.** {{% /blocks/feature %}}
 
