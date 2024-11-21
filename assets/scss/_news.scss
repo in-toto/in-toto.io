@@ -1,23 +1,13 @@
 .in-toto-news {
   .in-toto-columns {
-    display: flex;
-    align-items: flex-start;
     margin-bottom: 10px;
   }
 
   .in-toto-column {
-    display: block;
     padding-left: 0.75rem;
   }
 
-  .is-2 {
-    flex: 0 0 16.67%; /* Equivalent to 2 out of 12 columns */
+  .news-date {
     font-weight: bold;
-    color: var(--bs-tertiary-color);
-  }
-
-  .in-toto-column-content {
-    flex: 1;
-    margin-left: 20px;
   }
 }
