@@ -31,19 +31,19 @@
     "update:pkgs": "npx npm-check-updates -u"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.19",
-    "cspell": "^8.8.4",
-    "hugo-extended": "0.127.0",
+    "autoprefixer": "^10.4.20",
+    "cspell": "^8.16.0",
+    "hugo-extended": "0.139.0",
     "postcss-cli": "^11.0.0",
-    "prettier": "^3.3.1"
+    "prettier": "^3.3.3"
   },
   "optionalDependencies": {
-    "netlify-cli": "^17.26.1",
-    "npm-check-updates": "^16.14.20"
+    "netlify-cli": "^17.37.2",
+    "npm-check-updates": "^17.1.11"
   },
   "enginesComment": "Ensure that engines.node value stays consistent with the project's .nvmrc",
   "engines": {
-    "node": "20.x"
+    "node": "22.x"
   },
   "gitHubActionCacheKey": "2024-07-02 - change this key to force cache refresh",
   "private": true,
