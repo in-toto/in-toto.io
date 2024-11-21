@@ -1,8 +1,6 @@
 ---
 title: Community
 menu: { main: { weight: 40 } }
-cascade:
-  type: docs
+contributingUrl: /docs/contributing/
+aliases: [/contact]
 ---
-
-{{% community-lists %}}
