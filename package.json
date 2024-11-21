@@ -12,7 +12,7 @@
     "_hugo": "hugo --cleanDestinationDir",
     "_ls-bad-filenames": "find assets content -name '*_*' ! -name '[_.]*'",
     "_prepare:docsy": "cd themes/docsy && npm install",
-    "_serve": "npm run _hugo-dev -- --minify serve",
+    "_serve": "npm run _hugo-dev -- serve --minify --disableFastRender --renderToMemory",
     "build:preview": "npm run _hugo-dev -- --minify --baseURL \"${DEPLOY_PRIME_URL:-http://localhost}\"",
     "build:production": "npm run _hugo -- --minify",
     "build": "npm run _build --",

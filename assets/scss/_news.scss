@@ -13,7 +13,7 @@
   .is-2 {
     flex: 0 0 16.67%; /* Equivalent to 2 out of 12 columns */
     font-weight: bold;
-    color: #555;
+    color: var(--bs-tertiary-color);
   }
 
   .in-toto-column-content {

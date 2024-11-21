@@ -1,12 +1,15 @@
 baseURL: https://in-toto.io
 title: in-toto
 
-disableAliases: true # We do redirects via Netlify's _redirects file
 disableKinds: [taxonomy]
-enableGitInfo: true
-enableRobotsTXT: true
-
 theme: [docsy]
+enableGitInfo: true
+
+#
+# Outputs and Netlify _redirects file support
+#
+
+disableAliases: true # We do redirects via Netlify's _redirects file
 
 outputs:
   home: [HTML]

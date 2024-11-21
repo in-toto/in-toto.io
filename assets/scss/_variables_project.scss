@@ -5,6 +5,4 @@ $in-toto-colors: (
   'blue-light': #a3b5c8,
 );
 
-$primary: map-get($in-toto-colors, 'blue');
 $secondary: map-get($in-toto-colors, 'orange');
-$td-enable-google-fonts: false;
