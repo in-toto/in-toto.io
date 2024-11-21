@@ -1,9 +1,7 @@
 ---
-title: Getting Started
+title: Getting started
 weight: 2
 ---
-
-## Introduction
 
 in-toto provides a framework to protect the integrity of the software supply
 chain. It does so by verifying that each task in the chain is carried out as
