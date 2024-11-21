@@ -1,18 +1,10 @@
-@import 'external_link';
-@import 'td/code-dark';
 @import 'csp';
 @import 'news';
+@import 'external_link';
+@import 'td/code-dark';
 
-.td-navbar {
-  background-color: $primary !important;
-  opacity: 1;
-}
-
-.td-navbar .navbar-brand {
-  svg {
-    height: 3rem;
-    margin-left: 5rem;
-  }
+.td-navbar .navbar-brand svg {
+  height: 38px;
 }
 
 .td-home {
@@ -38,6 +30,7 @@
 
     a {
       color: white;
+
       &.external-link:after {
         display: none;
       }

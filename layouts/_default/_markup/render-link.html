@@ -1,0 +1,37 @@
+{{/* Source: https://github.com/open-telemetry/opentelemetry.io/blob/ddd8d43fff700effbe0047473071f9bab66ddb07/layouts/_default/_markup/render-link.html */ -}}
+
+{{ $url := .Destination -}}
+
+{{/* General link-render processing */ -}}
+
+{{ $isExternal := hasPrefix $url "http" -}}
+{{ if $isExternal -}}
+  {{ if findRE "^https://opentelemetry.io/\\w" $url -}}
+    {{ warnf "%s: use a local path, not an external URL, for the following reference to a site local page: %s"
+        .Page.File.Path $url -}}
+  {{ else if or
+    (findRE "^https://github.com/open-telemetry/opentelemetry-specification/(blob|tree)/main/specification/\\w" $url)
+    (findRE "^https://github.com/open-telemetry/opentelemetry-proto/(blob|tree)/main/docs/specification" $url)
+    (findRE "^https://github.com/open-telemetry/semantic-conventions/(blob|tree)/main/docs" $url)
+    -}}
+    {{ warnf "%s: use a local path, not an external URL, for the following reference to a local specification page: %s"
+    .Page.File.Path $url -}}
+  {{ end -}}
+{{ end -}}
+
+{{/* Until Hugo supports hook params (https://github.com/gohugoio/hugo/issues/6670), we'll inspect .Text. */ -}}
+
+<a href="{{ $url | safeURL }}"
+  {{- with .Title}} title="{{ . }}"{{ end -}}
+  {{- if $isExternal }} target="_blank" rel="noopener"
+    {{- $noExternalIcon := in .Text "hk-no-external-icon" -}}
+    {{ if not $noExternalIcon }} class="external-link"{{ end -}}
+  {{ end -}}
+>
+  {{- .Text | safeHTML -}}
+</a>
+
+{{- /*
+  cSpell:ignore warnf
+  This comment ensures that all trailing whitespace is trimmed.
+*/ -}}
