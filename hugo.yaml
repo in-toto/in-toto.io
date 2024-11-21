@@ -1,6 +1,8 @@
 baseURL: https://in-toto.io
 title: in-toto
 
+# cSpell:ignore Catmull Libera noopener
+
 disableKinds: [taxonomy]
 theme: [docsy]
 enableGitInfo: true
@@ -45,8 +47,7 @@ params:
       in-toto Authors | Docs [CC BY
       4.0](https://creativecommons.org/licenses/by/4.0)
     from_year: 2020
-  github_repo: https://github.com/in-toto/in-toto.io
-  # gcs_engine_id: 011217106833237091527:la2vtv2emlw # FIXME: get ID for this site
+  github_repo: &repo https://github.com/in-toto/in-toto.io
 
   ui:
     showLightDarkModeMenu: true
@@ -65,26 +66,31 @@ params:
 
   links:
     user:
-      - name: GitHub Discussions
-        url: https://github.com/in-toto/community
-        icon: fa-brands fa-github
-        desc: Discussion and help from your fellow users
-      - name: User mailing list
-        url: mailto:in-toto-public@googlegroups.com
-        icon: fa-solid fa-envelope
-        desc: Sign up for announcements
+      - name: Mailing list
+        url: https://groups.google.com/g/in-toto-public
+        icon: fa-solid fa-user-group
+        desc: Join our public mailing list.
       - name: Slack
-        url: https://slack.cncf.io/
+        url: https://slack.cncf.io
         icon: fa-brands fa-slack
-        desc: in-toto on CNCF Slack Workspace
+        desc: 'Connect with us on the CNCF #in-toto channel.'
+      - name: Email
+        url: mailto:in-toto-dev@googlegroups.com
+        icon: fa-solid fa-envelope
+        desc: Write to developers.
       - name: IRC
         url: https://web.libera.chat/#in-toto
         icon: fa-solid fa-comments
-        desc: in-toto on libera
-      - name: Email developers
-        url: mailto:in-toto-dev@googlegroups.com
-        icon: fa-solid fa-envelope
-        desc: Email developers
+        desc: Chat with us on Libera.
+    developer:
+      - name: Community repository
+        url: https://github.com/in-toto/community
+        icon: fa-solid fa-users
+        desc: Community charter, governance, and more.
+      - name: Documentation
+        url: *repo
+        icon: fa-brands fa-github
+        desc: Website repository for in-toto.
 
 module:
   mounts:
