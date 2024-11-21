@@ -1,4 +1,4 @@
-name: Files
+name: Links
 
 on:
   merge_group:
@@ -6,15 +6,8 @@ on:
   push: { branches: [main] }
 
 jobs:
-  check-filenames:
-    name: FILENAME check
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: npm run check:filenames
-
-  check-formatting:
-    name: FILE FORMAT
+  build-and-check-links:
+    name: BUILD and CHECK LINKS
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -30,5 +23,6 @@ jobs:
           cache: npm
           cache-dependency-path: tmp/package-ci.json
 
-      - name: Check file format
-        run: npm run check:format --ignore-scripts
+      - run: npm install --omit=optional
+
+      - run: npm run check:links
