@@ -1,7 +1,6 @@
 ---
 title: What is in-toto?
-description: A short explanation of what in-toto is.
-weight: 1
+weight: 10
 ---
 
 A software supply chain is the series of steps performed when writing, testing,
@@ -29,7 +28,4 @@ some guidance from the group creating the software, in-toto allows the user to
 verify if a step in the supply chain was intended to be performed, and if the
 step was performed by the right actor.
 
-You can read more about in-toto's internals in our
-[latest](https://github.com/in-toto/docs/blob/master/in-toto-spec.md) or
-[stable](https://github.com/in-toto/docs/blob/v1.0/in-toto-spec.md)
-specification.
+You can read more about in-toto's internals in our [specification](../specs).

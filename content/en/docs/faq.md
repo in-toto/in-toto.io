@@ -1,7 +1,7 @@
 ---
 title: Frequently asked questions
 linkTitle: FAQ
-weight: 1000
+weight: 900
 ---
 
 ### Why the name “in-toto”?

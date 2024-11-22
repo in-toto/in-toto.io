@@ -56,11 +56,14 @@ markup:
     noClasses: false # Required for dark-mode
 
 params:
+  overview_url: https://github.com/in-toto/specification/blob/v1.0/in-toto-spec.md#2-system-overview
   logo: /img/logo.png
   copyright:
     authors: >-
-      in-toto Authors | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0)
-      | [Funding](/about/#funding) |
+      in-toto Authors<br> [CC BY
+      4.0](https://creativecommons.org/licenses/by/4.0) |
+      [Trademarks](https://www.linuxfoundation.org/legal/trademark-usage) |
+      [Funding](/about/#funding) |
     from_year: 2020
   github_repo: &repo https://github.com/in-toto/in-toto.io
   privacy_policy: https://www.linuxfoundation.org/legal/privacy-policy
@@ -99,6 +102,10 @@ params:
         icon: fa-solid fa-comments
         desc: Chat with us on Libera.
     developer:
+      - name: Reporting issues
+        url: /docs/security
+        icon: fa-solid fa-bug
+        desc: How to report bugs and security issues.
       - name: Community repository
         url: https://github.com/in-toto/community
         icon: fa-solid fa-users

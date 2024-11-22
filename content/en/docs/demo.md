@@ -1,7 +1,6 @@
 ---
-title: in-toto demo
-linkTitle: Demo
-weight: 8
+title: Demo
+weight: 30
 ---
 
 In this demo, we will use in-toto to secure a software supply chain with a very
@@ -17,5 +16,5 @@ For the sake of demonstrating in-toto, you will perform all parts of the
 software supply chain. This means you will execute commands on behalf of Alice,
 Bob, and Carl, as well as the client who verifies the final product.
 
-For further steps, please refer to the
+For further steps, refer to the
 [demo](https://github.com/in-toto/demo/blob/main/README.md).
