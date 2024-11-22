@@ -1,6 +1,6 @@
 ---
 title: Integrations
-description: Projects and products with in-toto integrations.
+description: Projects and products integrating with in-toto.
 ---
 
 This section lists software systems, services, or platforms that integrate with
