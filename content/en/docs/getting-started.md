@@ -1,6 +1,9 @@
 ---
 title: Getting started
-weight: 2
+weight: 20
+# EDITORIAL NOTE: the content below was copied from the main in-toto repository
+# For details, see:
+# https://github.com/in-toto/in-toto.io/issues/75
 ---
 
 in-toto provides a framework to protect the integrity of the software supply
@@ -19,8 +22,6 @@ defined in the layout.
 The layout, signed by the project owners, together with the links, signed by the
 designated functionaries, are released as part of the final product, and can be
 validated manually or via automated tooling in, e.g. a package manager.
-
-## Getting Started
 
 ### Installation
 
@@ -178,41 +179,7 @@ For a detailed list of all command line arguments and their usage, run
 `in-toto-sign --help` or look at the
 [online documentation](https://in-toto.readthedocs.io/en/latest/command-line-tools/in-toto-sign.html).
 
-## in-toto demo
+## What next?
 
-You can try in-toto by running the
-[demo application](https://github.com/in-toto/demo). The demo basically outlines
-three users viz., Alice (project owner), Bob (functionary) and Carl
-(functionary) and how in-toto helps to specify a project layout and verify that
-the layout has been followed in a correct manner.
-
-## Specification
-
-You can read more about how in-toto works by taking a look at the
-[specification](https://github.com/in-toto/docs/blob/master/in-toto-spec.md).
-
-## Security Issues and Bugs
-
-See [SECURITY.md](https://github.com/in-toto/in-toto/blob/develop/SECURITY.md).
-
-## Governance and Contributing
-
-For information about in-toto's governance and contributing guidelines, see
-[GOVERNANCE.md](https://github.com/in-toto/in-toto/blob/develop/GOVERNANCE.md)
-and
-[CONTRIBUTING.md](https://github.com/in-toto/in-toto/blob/develop/doc/source/CONTRIBUTING.md).
-
-## Acknowledgments
-
-This project is managed by Prof. Santiago Torres-Arias at Purdue University. It
-is worked on by many folks in academia and industry, including members of the
-[Secure Systems Lab](https://ssl.engineering.nyu.edu/) at NYU and the
-[NJIT Cybersecurity Research Center](https://centers.njit.edu/cybersecurity).
-
-This research was supported by the Defense Advanced Research Projects Agency
-(DARPA), the Air Force Research Laboratory (AFRL), and the US National Science
-Foundation (NSF). Any opinions, findings, and conclusions or recommendations
-expressed in this material are those of the authors and do not necessarily
-reflect the views of DARPA, AFRL, and NSF. The United States Government is
-authorized to reproduce and distribute reprints notwithstanding any copyright
-notice herein.
+- Try the [demo](../demo).
+- Consult the [specifications](../specs).

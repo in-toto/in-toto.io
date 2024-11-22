@@ -1,7 +1,7 @@
 ---
 title: Specifications
 linkTitle: Specs
-weight: 7
+weight: 70
 ---
 
 {{% spec-table %}}

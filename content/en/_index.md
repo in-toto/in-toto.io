@@ -34,16 +34,24 @@ integrations</a>
 
 {{% blocks/section color="dark" type="row" %}}
 
-{{% blocks/feature icon="fa-solid fa-lock" title="Software supply chain protection" url="/docs/overview/" %}}
-**Supply chain compromises are becoming a frequent occurrence. in-toto can help
-you protect your software supply chain.** {{% /blocks/feature %}}
+{{% blocks/feature icon="fa-solid fa-lock" title="Software supply chain protection" url="/docs/" %}}
+
+Supply chain compromises are becoming a frequent occurrence. in-toto can help
+you protect your software supply chain.
+
+{{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-solid fa-book" title="Open, extensible standard" url="/docs/specs/" %}}
-**in-toto is an open metadata standard that you can implement in your software's
-supply chain toolchain.** {{% /blocks/feature %}}
+
+in-toto is an open metadata standard that you can implement in your software's
+supply chain toolchain.
+
+{{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-solid fa-gear" title="Extensive tooling" url="https://github.com/in-toto" %}}
-**You can use in-toto today by using our Apache-licensed libraries and tools.**
+
+You can use in-toto today by using our Apache-licensed libraries and tools.
+
 {{% /blocks/feature %}}
 
 {{% /blocks/section %}}
