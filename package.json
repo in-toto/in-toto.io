@@ -2,7 +2,7 @@
   "name": "docsy-user-guide",
   "scripts": {
     "_build": "npm run _hugo-dev --",
-    "_check:format": "npx prettier --check .",
+    "_check:format": "npx prettier@$(npm pkg get devDependencies.prettier | tr -d '^\"') --check .",
     "_check:links": "make check-links",
     "_check:links--warn": "npm run _check:links || (echo; echo 'WARNING: see link-checker output for issues.'; echo)",
     "_filename-error": "echo 'ERROR: the following files violate naming conventions; fix using: `npm run fix:filenames`'; echo; npm run -s _ls-bad-filenames; exit 1",
