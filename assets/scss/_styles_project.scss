@@ -14,6 +14,16 @@
     max-height: 12rem;
   }
 
+  .cta {
+    a {
+      @extend .btn-lg;
+      @extend .mt-2; // For when btns stack on mobile
+    }
+    a:not(:last-child) {
+      @extend .me-3;
+    }
+  }
+
   .cncf {
     text-align: center;
 
