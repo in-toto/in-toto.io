@@ -110,10 +110,10 @@ params:
         url: https://github.com/in-toto/community
         icon: fa-solid fa-users
         desc: Community charter, governance, and more.
-      - name: Documentation
+      - name: Website repository
         url: *repo
         icon: fa-brands fa-github
-        desc: Website repository for in-toto.
+        desc: GitHub repository containing in-toto website and documentation.
 
 module:
   mounts:

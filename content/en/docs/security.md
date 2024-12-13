@@ -1,7 +1,7 @@
 ---
 title: Security
 description: How to report bugs and security issues.
-weight: 40
+weight: 50
 ---
 
 Found an issue with in-toto? Report it by following the steps in [Security

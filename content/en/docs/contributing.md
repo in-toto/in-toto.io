@@ -1,6 +1,6 @@
 ---
 title: Contributing
-weight: 700
+weight: 500
 ---
 
 Thank you for considering contributing to in-toto.io! Here are the steps to set
