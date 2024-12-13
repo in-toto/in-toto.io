@@ -23,7 +23,7 @@ The layout, signed by the project owners, together with the links, signed by the
 designated functionaries, are released as part of the final product, and can be
 validated manually or via automated tooling in, e.g. a package manager.
 
-### Installation
+## Installation
 
 in-toto is available on [PyPI](https://pypi.org/project/in-toto/) and can be
 installed via [`pip`](https://pypi.org/project/pip/). See
@@ -35,9 +35,9 @@ recommendations.
 pip install in-toto
 ```
 
-### Create layout, run supply chain steps and verify final product
+Next you'll create a layout, run supply chain steps, and verify final product.
 
-#### Layout
+## Layout
 
 The in-toto software supply chain layout consists of the following parts:
 
@@ -61,7 +61,7 @@ Take a look at the
 [demo layout creation example](https://in-toto.readthedocs.io/en/latest/layout-creation-example.html)
 for further information on how to create an in-toto layout.
 
-#### Artifact Rules
+## Artifact Rules
 
 A software supply chain usually operates on a set of files, such as source code,
 executables, packages, or the like. in-toto calls these files artifacts. A
@@ -101,9 +101,9 @@ types, their guarantees and how they are applied, take a look at the
 [Artifact Rules](https://github.com/in-toto/docs/blob/master/in-toto-spec.md#433-artifact-rules)
 section of the in-toto specification.
 
-#### Carrying out software supply chain steps
+## Supply-chain steps
 
-##### in-toto-run
+### in-toto-run
 
 `in-toto-run` is used to execute a step in the software supply chain. This can
 be anything relevant to the project such as tagging a release with `git`,
@@ -127,7 +127,7 @@ For a detailed list of all the command line arguments, run `in-toto-run --help`
 or look at the
 [online documentation](https://in-toto.readthedocs.io/en/latest/command-line-tools/in-toto-run.html).
 
-##### in-toto-record
+### in-toto-record
 
 `in-toto-record` works similar to `in-toto-run` but can be used for multi-part
 software supply chain steps, i.e. steps that are not carried out by a single
@@ -139,12 +139,12 @@ arguments and their usage, run `in-toto-record start --help` or
 `in-toto-record stop --help`, or look at the
 [online documentation](https://in-toto.readthedocs.io/en/latest/command-line-tools/in-toto-record.html).
 
-#### Release final product
+## Release final product
 
 In order to verify the final product with in-toto, the verifier must have access
 to the layout, the `*.link` files, and the project owner's public key(s).
 
-#### Verification
+## Verification
 
 Use `in-toto-verify` on the final product to verify that
 
@@ -159,7 +159,7 @@ For a detailed list of all command line arguments and their usage, run
 `in-toto-verify --help` or look at the
 [online documentation](https://in-toto.readthedocs.io/en/latest/command-line-tools/in-toto-verify.html).
 
-#### Signatures
+## Signatures
 
 `in-toto-sign` is a metadata signature helper tool to add, replace, and verify
 signatures within in-toto Link or Layout metadata, with options to:
