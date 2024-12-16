@@ -1,6 +1,7 @@
 ---
 title: Specifications
 linkTitle: Specs
+aliases: [/specs]
 weight: 70
 ---
 

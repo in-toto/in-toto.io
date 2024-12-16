@@ -1,7 +1,7 @@
 baseURL: https://in-toto.io
 title: in-toto
 
-# cSpell:ignore Catmull Libera noopener
+# cSpell:ignore AFRL Catmull DARPA docsy Libera noopener
 
 disableKinds: [taxonomy]
 theme: [docsy]
@@ -13,9 +13,16 @@ enableGitInfo: true
 
 disableAliases: true # We do redirects via Netlify's _redirects file
 
+mediaTypes:
+  text/netlify: {}
+
+outputFormats:
+  REDIRECTS:
+    mediaType: text/netlify
+    baseName: _redirects
+    notAlternative: true
+
 outputs:
-  home: [HTML]
-  page: [HTML]
   section: [HTML]
 
 imaging:

@@ -1,6 +1,9 @@
+# Netlify redirects. See https://www.netlify.com/docs/redirects/
+{{/* cSpell:ignore cond wordmark */ -}}
+
 # No versions mentioned in the spec so assume v0.1
-Envelope/v0.1     https://github.com/in-toto/attestation/tree/v0.1.0/spec#envelope 
-Predicate/v0.1    https://github.com/in-toto/attestation/tree/v0.1.0/spec#predicate 
+Envelope/v0.1     https://github.com/in-toto/attestation/tree/v0.1.0/spec#envelope
+Predicate/v0.1    https://github.com/in-toto/attestation/tree/v0.1.0/spec#predicate
 
 # Below version numbers are in the spec at the v0.1.0 tag.
 Statement/v0.1    https://github.com/in-toto/attestation/tree/v0.1.0/spec#statement
@@ -9,8 +12,8 @@ Provenance/v0.1.0 https://github.com/in-toto/attestation/tree/v0.1.0/spec/predic
 SPDX/v1.0.0       https://github.com/in-toto/attestation/blob/v0.1.0/spec/predicates/spdx.md
 
 # Bonus: v0.1.0 <-> v0.1
-Envelope/v0.1.0   https://github.com/in-toto/attestation/tree/v0.1.0/spec#envelope 
-Predicate/v0.1.0  https://github.com/in-toto/attestation/tree/v0.1.0/spec#predicate 
+Envelope/v0.1.0   https://github.com/in-toto/attestation/tree/v0.1.0/spec#envelope
+Predicate/v0.1.0  https://github.com/in-toto/attestation/tree/v0.1.0/spec#predicate
 Provenance/v0.1   https://github.com/in-toto/attestation/tree/v0.1.0/spec/predicates/provenance.md
 Statement/v0.1.0  https://github.com/in-toto/attestation/tree/v0.1.0/spec#statement
 
@@ -37,3 +40,28 @@ attestation/test-result/v* https://github.com/in-toto/attestation/tree/main/spec
 
 attestation/vulns https://github.com/in-toto/attestation/tree/main/spec/predicates/vuln.md
 attestation/vulns/v* https://github.com/in-toto/attestation/tree/main/spec/predicates/vuln.md
+
+{{ range $p := .Site.Pages -}}
+
+{{ range $p.Aliases -}}
+{{ $alias := cond (strings.HasPrefix . "/")
+    .
+    (partial "relative-redirects-alias" (dict "alias" . "p" $p.Parent)) -}}
+{{ $alias | printf "%-35s" }} {{ $p.RelPermalink }}
+{{ end -}}
+
+{{ end }}{{/* range $p */ -}}
+
+{{- define "partials/relative-redirects-alias" -}}
+  {{ $result := "" }}
+  {{ if strings.HasPrefix .alias "../" }}
+    {{ $result = (partial "relative-redirects-alias"
+          (dict
+            "alias" (strings.TrimPrefix "../" .alias)
+            "p" .p.Parent ))
+    }}
+  {{ else }}
+    {{ $result = path.Join .p.RelPermalink .alias }}
+  {{ end }}
+  {{ return $result }}
+{{ end }}
