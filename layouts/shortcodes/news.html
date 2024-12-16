@@ -1,16 +1,12 @@
-{{ $news := site.Data.news }}
-<div class="container">
-  {{ range $news }}
-  {{ $date := dateFormat "January 2, 2006" .date }}
-  <div class="columns content is-medium">
-    <div class="column is-2">
-      <strong>
-        {{ $date }}
-      </strong>
-    </div>
+{{ $news := site.Data.news -}}
 
-    <div class="column">
-      {{ .text | markdownify }}
+<div class="in-toto-news">
+  {{ range $news }}
+  {{ $date := dateFormat "January 2, 2006" .date -}}
+  <div class="in-toto-columns in-toto-content is-medium">
+    <div class="news-date">{{ $date }}</div>
+    <div class="in-toto-column">
+      {{- .text | markdownify -}}
     </div>
   </div>
   {{ end }}

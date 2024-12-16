@@ -1,0 +1,53 @@
+@import 'csp';
+@import 'news';
+@import 'external_link';
+@import 'td/code-dark';
+
+.td-navbar .navbar-brand svg {
+  height: 38px;
+}
+
+.td-home {
+  .in-toto-logo {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    max-height: 12rem;
+  }
+
+  .cta {
+    a {
+      @extend .btn-lg;
+      @extend .mt-2; // For when btns stack on mobile
+    }
+    a:not(:last-child) {
+      @extend .me-3;
+    }
+  }
+
+  .cncf {
+    text-align: center;
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 20rem;
+      padding-top: 1rem;
+      max-width: 80%;
+    }
+
+    a {
+      color: white;
+
+      &.external-link:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.td-breadcrumbs__single {
+  display: none;
+}

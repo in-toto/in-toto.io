@@ -8,3 +8,6 @@
 
 # npm artifacts
 node_modules/
+
+# other
+/tmp

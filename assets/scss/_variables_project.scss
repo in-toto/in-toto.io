@@ -1,0 +1,8 @@
+$in-toto-colors: (
+  'orange': #ed4b27,
+  'orange-light': #f47a39,
+  'blue': #1b2838,
+  'blue-light': #a3b5c8,
+);
+
+$secondary: map-get($in-toto-colors, 'orange');

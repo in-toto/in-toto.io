@@ -1,0 +1,121 @@
+baseURL: https://in-toto.io
+title: in-toto
+
+# cSpell:ignore Catmull Libera noopener
+
+disableKinds: [taxonomy]
+theme: [docsy]
+enableGitInfo: true
+
+#
+# Outputs and Netlify _redirects file support
+#
+
+disableAliases: true # We do redirects via Netlify's _redirects file
+
+outputs:
+  home: [HTML]
+  page: [HTML]
+  section: [HTML]
+
+imaging:
+  resampleFilter: CatmullRom
+  quality: 75
+  anchor: smart
+
+languages:
+  en:
+    languageName: English
+    languageCode: en-US
+    params:
+      description: A framework to secure the integrity of software supply chains
+      whatIsInToto: |
+        in-toto is designed to ensure the integrity of a software product from
+        initiation to end-user installation. It does so by making it transparent to the
+        user what steps were performed, by whom and in what order.
+      funding: |
+        This research was supported by the US [National Science Foundation][NSF]
+        (NSF), the Defense Advanced Research Projects Agency (DARPA) and the Air
+        Force Research Laboratory (AFRL). Any opinions, findings, and
+        conclusions or recommendations expressed in this material are those of
+        the authors and do not necessarily reflect the views of NSF, DARPA and
+        AFRL. The United States Government is authorized to reproduce and
+        distribute reprints notwithstanding any copyright notice herein.
+
+        [NSF]: https://www.nsf.gov
+
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+      wrapStandAloneImageWithinParagraph: false
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false # Required for dark-mode
+
+params:
+  overview_url: https://github.com/in-toto/specification/blob/v1.0/in-toto-spec.md#2-system-overview
+  logo: /img/logo.png
+  copyright:
+    authors: >-
+      in-toto Authors<br> [CC BY
+      4.0](https://creativecommons.org/licenses/by/4.0) |
+      [Trademarks](https://www.linuxfoundation.org/legal/trademark-usage) |
+      [Funding](/about/#funding) |
+    from_year: 2020
+  github_repo: &repo https://github.com/in-toto/in-toto.io
+  privacy_policy: https://www.linuxfoundation.org/legal/privacy-policy
+
+  ui:
+    showLightDarkModeMenu: true
+    sidebar_menu_compact: true
+    sidebar_menu_foldable: false
+    sidebar_search_disable: true
+    feedback:
+      enable: false # Disable until we have a proper CSP-compatible solution
+      'yes': >-
+        Thank you. Your feedback is appreciated!
+      # prettier-ignore
+      'no': >-
+        Please let us know <a class="external-link" target="_blank" rel="noopener"
+        href="https://github.com/in-toto/in-toto.io/issues/new?title=Page%20feedback&body=Suggested%20improvements%20for%20page:%20ADD%20PAGE-URL-HERE">how
+        we can improve this page</a>. Your feedback is appreciated!
+
+  links:
+    user:
+      - name: Mailing list
+        url: https://groups.google.com/g/in-toto-public
+        icon: fa-solid fa-user-group
+        desc: Join our public mailing list.
+      - name: Slack
+        url: https://slack.cncf.io
+        icon: fa-brands fa-slack
+        desc: 'Connect with us on the CNCF #in-toto channel.'
+      - name: Email
+        url: mailto:in-toto-dev@googlegroups.com
+        icon: fa-solid fa-envelope
+        desc: Write to developers.
+      - name: IRC
+        url: https://web.libera.chat/#in-toto
+        icon: fa-solid fa-comments
+        desc: Chat with us on Libera.
+    developer:
+      - name: Reporting issues
+        url: /docs/security
+        icon: fa-solid fa-bug
+        desc: How to report bugs and security issues.
+      - name: Community repository
+        url: https://github.com/in-toto/community
+        icon: fa-solid fa-users
+        desc: Community charter, governance, and more.
+      - name: Website repository
+        url: *repo
+        icon: fa-brands fa-github
+        desc: GitHub repository containing in-toto website and documentation.
+
+module:
+  mounts:
+    - source: content/en
+      target: content
