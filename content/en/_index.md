@@ -1,5 +1,8 @@
 ---
 title: in-toto
+outputs:
+  - HTML
+  - REDIRECTS # Include this `content/en` ONLY
 description: A framework to secure the integrity of software supply chains
 ---
 

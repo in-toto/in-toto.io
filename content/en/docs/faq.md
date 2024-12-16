@@ -1,6 +1,7 @@
 ---
 title: Frequently asked questions
 linkTitle: FAQ
+aliases: [/faq]
 weight: 900
 ---
 

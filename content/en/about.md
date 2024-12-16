@@ -2,6 +2,7 @@
 title: About in-toto
 linkTitle: About
 menu: { main: { weight: 10 } }
+aliases: [/in-toto]
 ---
 
 {{% blocks/cover title="About in-toto" height="auto" %}}
