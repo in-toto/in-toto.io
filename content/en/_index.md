@@ -62,12 +62,12 @@ Use in-toto today by through Apache-licensed libraries and tools.
 
 {{% blocks/section color="secondary" type="cncf" %}}
 
-**in-toto is a [CNCF][] [incubating][] project**.<br>
+**in-toto is a [CNCF][] [graduated][] project**.<br>
 
 [![CNCF logo][]][cncf]
 
 [cncf]: https://cncf.io
 [cncf logo]: /img/cncf-white.svg
-[incubating]: https://www.cncf.io/projects/
+[graduated]: https://www.cncf.io/projects/
 
 {{% /blocks/section %}}
