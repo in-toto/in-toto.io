@@ -54,7 +54,7 @@ Explore integrations and adopters of in-toto.
   icon="fa-solid fa-gear"
 %}}
 
-Use in-toto today by through Apache-licensed libraries and tools.
+Use in-toto today through Apache-licensed libraries and tools.
 
 {{% /blocks/feature %}}
 
