@@ -9,7 +9,7 @@ Predicate/v0.1    https://github.com/in-toto/attestation/tree/v0.1.0/spec#predic
 Statement/v0.1    https://github.com/in-toto/attestation/tree/v0.1.0/spec#statement
 Link/v1.0.0       https://github.com/in-toto/attestation/tree/v0.1.0/spec/predicates/link.md
 Provenance/v0.1.0 https://github.com/in-toto/attestation/tree/v0.1.0/spec/predicates/provenance.md
-SPDX/v1.0.0       https://github.com/in-toto/attestation/blob/v0.1.0/spec/predicates/spdx.md
+SPDX/v1.0.0       https://github.com/in-toto/attestation/tree/v0.1.0/spec/predicates/spdx.md
 
 # Bonus: v0.1.0 <-> v0.1
 Envelope/v0.1.0   https://github.com/in-toto/attestation/tree/v0.1.0/spec#envelope
@@ -20,7 +20,7 @@ Statement/v0.1.0  https://github.com/in-toto/attestation/tree/v0.1.0/spec#statem
 # Below version numbers use main branch
 
 # Below version numbers are in the spec at the v1.x tag
-Statement/v1      https://github.com/in-toto/attestation/blob/main/spec/v1/statement.md
+Statement/v1      https://github.com/in-toto/attestation/tree/main/spec/v1/statement.md
 
 # Below are vetted Attestation Framework predicates (versioned independently)
 attestation/link https://github.com/in-toto/attestation/tree/main/spec/predicates/link.md
@@ -38,8 +38,15 @@ attestation/scai/attribute-report/v* https://github.com/in-toto/attestation/tree
 attestation/test-result https://github.com/in-toto/attestation/tree/main/spec/predicates/test-result.md
 attestation/test-result/v* https://github.com/in-toto/attestation/tree/main/spec/predicates/test-result.md
 
-attestation/vulns https://github.com/in-toto/attestation/tree/main/spec/predicates/vuln.md
-attestation/vulns/v* https://github.com/in-toto/attestation/tree/main/spec/predicates/vuln.md
+attestation/vulns/v0.1 https://github.com/in-toto/attestation/tree/main/spec/predicates/vuln.md
+attestation/vulns/v0.2 https://github.com/in-toto/attestation/tree/main/spec/predicates/vulns_02.md
+attestation/vulns https://github.com/in-toto/attestation/tree/main/spec/predicates/vulns_02.md
+
+attestation/reference/v0.1 https://github.com/in-toto/attestation/tree/main/spec/predicates/reference.md
+attestation/reference https://github.com/in-toto/attestation/tree/main/spec/predicates/reference.md
+
+attestation/scai/v0.3 https://github.com/in-toto/attestation/tree/main/spec/predicates/scai.md
+attestation/scai https://github.com/in-toto/attestation/tree/main/spec/predicates/scai.md
 
 {{ range $p := .Site.Pages -}}
 
