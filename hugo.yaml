@@ -108,6 +108,10 @@ params:
         url: https://web.libera.chat/#in-toto
         icon: fa-solid fa-comments
         desc: Chat with us on Libera.
+      - name: Meetings
+        url: https://zoom-lfx.platform.linuxfoundation.org/meetings/intoto
+        icon: fa-solid fa-calendar
+        desc: Join our monthly community meetings.
     developer:
       - name: Reporting issues
         url: /docs/security
